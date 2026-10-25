@@ -13,5 +13,16 @@ Ahora bien, antes de que corra a hacerlo le pedimos que termine este párrafo. L
 
 ## 0.2 Sistemas, complejidad y modelos
 
+Un ordenador es un *sistema complejo* que puede describirse mediante diferentes *modelos* en distintos *niveles* de una *jerarquía de abstracciones*.[^1] Todo lo que sigue en esta lección está dedicado a explicar el significado de este escueto (y seguramente críptico para el lector) mensaje, y a extraer consecuencias del mismo.
+
+### Sistemas
+
+🚧 TODO 🚧
+
+
+
+
+
+[^1]: Obsérvese que este enunciado no es una definición de ordenador, sino la declaración de unas propiedades del mismo. Dicho de otro modo, en él se utiliza el verbo "ser" en el sentido de la *predicación*, no en el de la *identidad*. (J. Ferrater h H. Leblanc: *Lógica matemática*. Fondo de Cultura Económica, México, 1962).
 
 
