@@ -1,0 +1,17 @@
+[book]
+title = "Conceptos básicos de arquitectura y sistemas operativos"
+authors = ["Gregorio Fernández"]
+language = "en"
+
+src = "src"
+
+[build]
+build-dir = "book"
+
+# Habilita el preprocesador de KaTeX
+[preprocessor.katex]
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+mathjax-support = false # Desactivado a favor de KaTeX
