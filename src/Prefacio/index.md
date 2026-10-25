@@ -75,8 +75,24 @@ Como complemento, están disponibles unos programas (para MS-DOS) que permiten p
 
 ## Agradecimientos
 
+El autor ha ido adquiriendo los conocimientos que trata de compartir aquí a lo largo de más de veinte años de actividad docente e investigadora en la Escuela Técnica Superior de Ingenieros de Telecomunicación de la Universidad Politécnica de Madrid. No es posible mencionar a todas las personas que, de algún modo, han contribuido en esta formación y maduración personal. Pero el riesgo de olvidar a muchos no justificaría el dejar de destacar a algunos.
 
+Fernando Sáez Vacas me inició en la Informática y, sobre todo, en la forma abierta de estudiar la tecnología y en la docencia universitaria. Su amistad ininterrupmpida ha sido y es una fuente permanente de enriquecimiento.
 
+Entre los profesores que han colaborado en la impartición de la asignatura "Fundamentos de los ordenadores" (cuyo programa ha sido el germen del libro), tengo que destacar, muy especialmente, a Mercedes Garijo, que ha dedicado muchas horas durante los tres últimos años a revisar sucesivas versiones del texto y de las figuras, lo que me ha permitido depurar inconsistencias, carencias, errores y erratas de todo tipo (huelga decir que los que aún quedan son de la exclusiva responsabilidad del autor). Pedro Alonso ha constribuido con un gran número de correcciones, como también Martín Llamas (de la Universidad de Vigo). Las lecciones de introducción a los sistemas operativos (19 a 23) se han beneficiado de numerosas sugerencias de Ángel Álvarez y de Gonzalo de León.
+
+Un antecedente de este libro fueron los dos volúmenes editados en la Escuela hace dieciséis años. Eran el resultado de un trabajo de corrdinación de Fernando Sáez y mío en el que los profesores con los que iniciamos el diseño y la impartición de la citada asignatura contribuían con varios capítulos: Pedro Alonso, Carmen Costilla, Juan Quemada, Enrique Rivero y José María Vela quizás reconozcan aquí todavía algunos detalles inspirados en sus textos.
+
+Además de los mencionados, otros compñaeros con los que he compartido la docencia de ésta y otras asignaturas, y de los que también he aprendido, han sido: Carlos Delgado, José Carlos González, Darío Maravall, Encarna Pastor, Juan Riera, Juan Ramón Velasco y Angel Viña.
+
+Es difícil precisarla y cuantificarla, pero también es innegable y de obligado reconocimiento la positiva influencia de los alumnos en la evolución profesional y personal de un profesor. Por motivos obvios, es imposible dar los nombres de todos. Pero, por su ahínco en la detección de errores y en la crítica constructiva, valga como representantivo el de Oscar José Martínez de la Torre (que además, en estos momentos, es el delegado de los alumnos de la Escuela). Por otra parte, Jesús Pérez Garcilópez ha desarrollado los programas simuladores y ensambladores mencionados más arriba.
+
+En los medios instrumentales, he hecho uso de las aportaciones de Donal Knuth y de Leslie Lamport, creadores de TEX y LATEX, respectivamente. También, de un útil programa de Jose Antonio Mañas, "ftc" (filtro de textos en castellano). Ignacio Bellido, José Miguel Goñi y Juan Ramón Velasco han estado siempre solícitos para resolver los problemas que a veces uno llega a atribuir a duendes infiltrados en las máquinas.
+
+A la elaboración de este libro he dedicado más de seis mil horas, casi cuatro mil de elllas en períodos de vacaciones y fines de semana. La deuda contraída con mi familia es tan grande que sólo cabe dejar constancia de su existencia.
+
+Madrid, junio de 1994  
+Gregorio Fernández
 
 
 
