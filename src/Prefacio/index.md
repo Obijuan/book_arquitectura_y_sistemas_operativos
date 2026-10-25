@@ -33,6 +33,48 @@ Se trata de un **curso** (y no tiene "capítulos", sino "lecciones"). Sea el lec
 Y es un curso sobre **conceptos básicos**. Además de complejos, los ordenadores son dependientes de unas tecnologías que cambian muy rápidamente. Un curso basado en los productos que hoy se encuentran en el mercado tendria una utilidad efímera, y los conocimientos transmitidos quedarían rápidamente obsoletos. Afortunadamente, después de cincuitea años de sucesivas innovaciones, pueden ya identificarse ciertos conceptos relativamente invariantes e independientes de la tecnología, y en ellos se centra el libro. Para concentrarse mejor en esos conceptos básicos, la exposición se hace sobre "ordenadores ficticios" ("Símplez", "Algorítmez" y "Regístrez"). Pero el "aislamiento" (o abstracción) total de la tecnología es imposible. Algunos datos y modelos concretos, especialmente dentro de las lecciones 5, 8, 12, 15, 16, 17, 18 y 23, pueden empezar a resultar "antiguos" dentro de muy poco (¡quizás antes de que el libro vea la luz!).
 
 
+## Estructura
+
+Este libro está compuesto sobre la base de una visión sistémica de los ordenadores. En cada *nivel de abstracción* se presentan diferentes tipos de descripciones o *modelos*. En la "lección 0" se explica esta concepción sistémica, y a su término podremos situar en ese contexto la estructura y el contenido del curso. Adelantemos aquí que, aparte de esa lección 0 y de tres apéndices, consta de tres partes con ocho lecciones cada una.
+
+Todas las lecciones empiezan con un apartado de "Proósito". En él se fijan los objetos de la lección y, cuando es la primera de una parte, del conjunto de lecciones. Se incluyen también ahí las reflexiones o consideraciones previas que sean necesarias como introducción. En los apartados de "Resumen" se recuerda lo tratado y en su caso se añaden conclusiones finales. Nos ha parecido conveniente ir complementando la exposición con algunos particulares no estrictamente técnicos, que aparecen al final de las lecciones. Con los apartados de "Observaciones terminológicas" pretendemos compensar el abuso de barbarismos tan extendido en la informáticva; para algunos términos hemos adoptado traducciones poco usuales, que se explican o se justifican en esos apartados. En las "Notas históricas" presentamos algunos hechos que creemos conveniente conocer para la buena comprensión de los ordenadores.
+
+Para su uso como "libro de texto", los conceptos incluidos en cada lección pueden tratarse en dos "clases" de unos cincuienta minutos, suponiendo que se trata de clases *de síntesis*. Estimamos que desarrollar el contenido de todas las lecciones requeriría una asignatura de unos quince créditos (150 horas). Para una (o dos) de seis créditos (módulo bastante extendido en los planes de estudio actuales) es preciso seleccionar. Al final de la lección 0 se dan algunas orientaciones a este respecto.
+
+## Ensambladores y simuladores
+
+Como complemento, están disponibles unos programas (para MS-DOS) que permiten practicar, y afianzar así los conceptos explicados en el texto. Se trata de ensambladores y simuladores de Símplez y Algorítmez. En lugar del procedimiento tradicional de incluir un disquete con el libro (que complica los procesos editoriales, repercute en el precio, y , sobre todo, dificulta la actualización de versiones) hemos preferido dejarlos accesibles por "ftp" a través de Internet. El procedimiento para obtenerlos es:[^5]
+
+1. Conéctese al servidor:  
+    ```% ftp ftp.dit.upm.es```
+
+2. El servidor responde y pregunta por el nombre ("`Name:`"); escriba, simplemente: "`anonymous`". A continuación pide la contraseña ("`Password:`"); escriba su dirección de correo electrónico.
+3. Cambie al directorio que contiene los programas:
+   ```ftp> cd pub/doc/books```
+
+4. Ponga el modo de transferencia binario:
+    ```ftp> binary```
+
+5. Copie el fichero en su máquina:
+    ```ftp> get simalg.tar.Z```
+
+6. Cierre la conexión
+    ```ftp> bye```
+
+7. El fichero obtenido está comprimido; haga la descompresión:
+
+    ```% uncompress simalg.tar.Z```
+
+8. El fichero es una concatenación de ficheros; sepárelos:
+
+    ```% tar -xvf simalg.tar```
+
+9. Lea el fichero "`leeeme`"
+
+
+
+## Agradecimientos
+
 
 
 
@@ -45,3 +87,5 @@ Y es un curso sobre **conceptos básicos**. Además de complejos, los ordenadore
 [^3]: "La informática [*computer science*] es el estudio de los fenómenos que rodean a los ordenadores [...] La máquina, —no ya el hardware, sino la máquina programada, viviente— es el organismo que estudiamos". A. Newell y H. Simon: "Computer science as scientific inquiry: symbols and search". *Communications of the ACM*, 19, 3 (Mar. 1976), pp. 113-126
 
 [^4]: Si no fuera por la renuncia del autor a las "dedicatorias", habría dirigido la de este libro "a los alumnos que se aburren en clase". Esto necesita una explicación (entre otras cosas, para apaciguar el enojo de los colegas). Una de las aberraciones de nuestro sistema educativo universitario es el acto en que se ha convertido la "lección magistral" en la mayoría de los centros. Entendemos que debería ser una clase de síntesis y reforzamiento, impartida tras un período de estudio, acciones tutoriales, clases prácticas y evaluaciones parciales, y preparada muy cuidadosamente. La limitación de recursos no sólo hace inviable este proceso. Determina también un número de alumnos por grupo (más del centener en nuestro caso) que conduce a las "clases teóricas", monólogos en los que el profesor, casi sin interacción con los alumnos (y agobiado a veces por "cubrir el programa"), expone, con su mejor voluntad de hacerse entender, una sucesión más o menos ordenada de conocimientos. Muy frecuentemente, preparando estas clases, reflexiono sobre su escasa eficacia educativa. Y me asombra la capacidad de los alumnos para cumplir estoicamente un "horario" que a veces incluye ¡seis horas seguidas de clase! Salvo que uno fuese, además de profesor, un excepcional orador con poder de seducción del auditorio, ¿no sería más rentable y gratificante para el alumno adquirir los conocimientos por medio de la palabra escrita, a su ritmo y manera? Esta ha sido una de las motivaciones para escribir este libro. Esperamos que nos sirva para organizar las clases de un modo más sensato.
+
+[^5]: Naturalmente, es necesario disponer de un ordenador, estación o terminal conectado a Internet. Este párrafo está dirigido a profesores e instructores. Los lectores no iniciados pueden despejar algo de su perplejidad sobre lo que aquí se dice leyendo el apartado 23.8.
