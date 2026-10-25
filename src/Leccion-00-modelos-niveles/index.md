@@ -62,7 +62,11 @@ Todo modelo es homomórfico (en el sentido matemático de la palabra, no en el e
 
 ### Aspectos semióticos de los modelos
 
+La semiótica es una teoría lógica general de los sistemas de símbolos. Siendo los lenguajes sistemas de símbolos, la semiótica tiene funciones de metalenguaje. En ella se consideran tres partes: la **sintaxis** estudia exclusivamente los símbolos y las leyes para su combinación; la **semántica** se ocupa del significado de los símbolos, es decir, de su relación con los objetos que designan; y la **pragmática** trata de las relaciones de los símbolos y construcciones del lenguaje con las personas que los utilizan. Así, al enunciar cosas como "`ordenador` es un sustantivo" o "`ordenador` es también un adjetivo" nos movemos en el campo de la sintaxis; al decir "un ordenador (sustantivo) es un artefacto pensado para liberar a la mente humana de tareas rutinarias" o "`ordenador` (sustantivo) es un vocablo de origen francés que designa a ciertas máquinas también llamadas computadores" estamos en el campo de la semántica, y al afirmar que "hay quien ve un peligro en los ordenadores" o "todos somos usuarios y víctivamos de los ordenadores" pasamos al campo de la pragmática.
 
+En los modelos en general podemos también identificar esas tres vertientes. En efecto, los modelos se construyen siguiendo ciertas reglas para combinar elementos (sintaxis), representan a un sistema original (semántica) y sirven para un fin (pragmática). La figura 0.3 ilustra estas relaciones entre el modelo, el sistema que representa y las personas que lo usan.
+
+![Figura 0.3: Sintaxis, semántica y pragmática de los modelos](fig-0_3-Sintaxis-semantica-pragmatica-de-los-modelos.svg)
 
 🚧 TODO 🚧
 
