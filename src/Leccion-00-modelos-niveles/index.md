@@ -87,8 +87,22 @@ Finalmente, por su pragmática, los modelos (sean materiales o abstraídos) pued
 
 ## 0.3 Modelos funcionales, estructurales y procesales
 
+### Modelos funcionales
+
+Se obtienen modelos funcionales cuando se pretende describir la **función** del sistema: sus acciones sobre el entorno y sus reacciones a éste.[^11] De todas las interacciones posibles entre el sistema y el entorno se seleccionan algunas para el modelo y se clasifican en **estímulos** (influencias del entorno sobre el sistema) y **respuestas** (influencias del sistema sobre el entorno). Como ilustra la fugura 0.6, el modelo del sistema es una **caja negra**[^12] que recibe estímulos (o "entradas") y genera respuestas (o "salias"). La respuesta ante un determinado estímulo (o sucesión de estímulos) es el **comportamiento** del sistema para este estímulo.
+
+  ![Figura 0.6. Modelo funcional ("caja negra").](fig-0_6-model-funcional.svg)
+
+Un modelo funcional de un sistema dinámico es, pues, una descripción de todos los comportamientos del sistema.[^13] Es decir, una descripción de todos los posibles estímulos y todas las posibles respuestas del sistema, y de cómo unos se relacionan con las otras en función del tiempo. Así son los modelos de ordenador definidos en los manuales de programación, el modelo de comportamiento del automóvil que enseñan en las "autoescuelas", o los "modelos del hombre" de la psicología conductista.
+
+Al establecer un modelo funcional se selecciona un número finito de tipos de estímulos y de respuestas (lo que se traduce, al formalizar el modelo, en un número finito de variables de entrada y de salida), y esto ya significa una cierta abstracción, puesto que las relaciones del sistema con el entorno pueden ser innumerables. Por otra parte, hemos dicho que un modelo funcional debe describir todo los estímulos, las respuestas y las relaciones entre unos y otras. Frecuentemente, la enumeración exhaustiva (es decir, para todos los valores posibles de las variables de entrada y salida seleccionadas) es imposible, y se utiliza o bien un modelo funcional incompleto (es el caso del "modelo de autoescuela", que inlcuye el comportamiento dinámico habitual, pero excluye habilidades dominadas sólo por especialistas) o bien una descripción *intensional*, no extensional (es el caso de los modelos de sistemas dinámicos lineales, en los que se utilizan, por ejemplo, "funciones de transferencia", que engloban en una sola fórmula, como las de la figura 0.5, las infinitas relaciones posibles entre las entradas y las salidas).
+
+### Modelos estructurales
 
 
+
+
+  🚧 TODO 🚧
 
 [^1]: Obsérvese que este enunciado no es una definición de ordenador, sino la declaración de unas propiedades del mismo. Dicho de otro modo, en él se utiliza el verbo "ser" en el sentido de la *predicación*, no en el de la *identidad*. (J. Ferrater h H. Leblanc: *Lógica matemática*. Fondo de Cultura Económica, México, 1962).
 
@@ -109,3 +123,10 @@ Finalmente, por su pragmática, los modelos (sean materiales o abstraídos) pued
 [^9]: M. Bunge: *Epistemología*. Ariel, Barcelona, 1980.
 
 [^10]: "5. Esquema teórico, generalmente en forma matemática, de un sistema o de una realidad compleja (por ejemplo, la evolución económica de un país), que se elabora para facilitar su comprensión y el estudio de su comportamiento". (D.R.A.E.)
+
+[^11]: "Función: Capacidad de acción o acción propia de los seres vivos y de sus órganos y de las máquinas o instrumentos" (D.R.A.E.)
+
+[^12]: Esta es una denominación establecida, pero "caja opaca" se ajustaría más a la idea.
+
+[^13]: No se olvide que "funcional" se refiere a "función", no a "funcionamiento". El funcionamiento (actividad interna) de una sistema se describe mediante un modelo procesal.
+
