@@ -73,13 +73,20 @@ En los modelos en general podemos también identificar esas tres vertientes. En 
 
 Las anteriores consideraciones nos sirven para establecer un marco de clasificación de los modelos siguiendo los tres niveles semióticos. Pero, además, como sistemas que son, los modelos pueden también clasificarse en materiales y conceptuales (abstraidos). De acuerdo con esto, tenemos una variedad de modelos, según resume la figura 0.4, que pasamos a comentar.
 
-🚧 TODO 🚧: Figura 0.4: Clasificación de los modelos.
+![Figura 0.4: Clasificación de los modelos.](fig-0_4-clasificacion-modelos.svg)
 
 Por su sintaxis, los modelos materiales son tan variados como los distintos tipos de elementos físicos que pueden componerlos (ladrillos, "chips", moléculas, células...) y las reglas para su combinación. No hay clasificación posible. En cuanto a los modelos conceptuales, estarán expresados en algún lenguaje más o menos formalizado. La clasificación de la figura ("formalizaos-no formalizados") en realidad representa los extremos de una gama infinita de posibilidades (entre los modelos puramente matemáticos expresados estrictamente, por ejemplo, en álgebra, y las descripciones totalmente literarias en lengujae natural, normalmente adoptamos una posición intermedia, sea porque matizamos con el lenguaje natural el modelo formal, sea porque procuremos restringir el uso del lengujae natural en las descripciones para evitar ambigüedades). 
 
-Por su semántica, los modelos materiales pueden ser **icónicos** o **analógicos**. Los primeros son aquellos que se construyen con partes de la misma naturaleza física...
+Por su semántica, los modelos materiales pueden ser **icónicos** o **analógicos**. Los primeros son aquellos que se construyen con partes de la misma naturaleza física que las partes del original, de modo que el modelo reproduce al original cambiando únicamente la escala de algunas magnitudes, y eventualmente abstrayendo, omitiendo o transformando alguna magnitud. Es el caso de las reproducciones a escala de vehículos para su estudio aerodinámico, o de los mapas topográficos. En este tipo de modelo aparece claramente la propiedad de homomorfismo entre el modelo y el original (en la reproducción a escala de vehículos, si sólo interesa el comportamiento aerodinámico no se incluyen detalles de los subsistemas motor, eléctrico, etc; en los mapas,, aparte del cambio de escala, se transforma la dimensión de altitud mediante el convenio de las líneas de nivel). Los modelos analógicos son también materiales, y están, por tanto, constituidos por objetos concretos, pero de naturaleza diferente a la de las partes del original. Así son, por ejemplo, los "circuitos equivalentes" cuyo comportamiento eléctrico es análogo al de algún sistema mecánico original, como ilustra la figura 0.5.
 
-🚧 TODO 🚧
+![Figura 0.5. Un modelo analógico.](fig-0_5-modelo-analogico.svg)
+
+Distiguiremos, desde el punto de vista semántico, tres tipos de modelos conceptuales: *funcionales, estructurales y procesales*. Esta es la clasificación más interesante a los efectos de este libro. Dedicaremos el siguiente apartado a su explicación.
+
+Finalmente, por su pragmática, los modelos (sean materiales o abstraídos) pueden utilizarse, entre otras cosas, para *comprender* al sistema original, para *usarlo*, para *diseñarlo* o para *implementarlo*. En cada caso se tendrá un punto de vista distinto sobre el sistema, y se utilizarán diferentes modelos (materiales o conceptuales, más o menos formalizados, funcionales, estructurales o procesales). De esto hablaremos en el apartado 0.5
+
+## 0.3 Modelos funcionales, estructurales y procesales
+
 
 
 
