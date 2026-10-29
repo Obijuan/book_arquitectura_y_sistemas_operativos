@@ -116,8 +116,24 @@ Es interesante observar que "estructura" y "función" suelen aparecer claramente
 
 ### Modelos procesales
 
+Así como un modelo funcional describe la *función dinámica externa* (relaciones entre sistema y entorno) y un modelo estructural describe la *organización estática interna* (partes y relaciones), un modelo procesal describe la *actividad dinámica interna o proceso* de un sistema material. En efecto, si el sistema exhibe un comportamiento dinámico en sus relaciones con el entorno, necesariamente tienen que producirse cambios en su interior. Un modelo procesal describe estos cambios haciendo abstracción de la estructura. Los conceptos básicos para tal abstracción son los de *estado* y *transición* entre estados. El **estado** es una entidad abstracta, conceptual, que podemos definir como *la información mínima necesaria en un instante dado para, conociendo la evolución de los estímulos a partir de ese instante, predecir la evolución de las respuestas*. El estado resume, por tanto, la historia anterior del sistema. Ante un estímulo en un instante, el estado cambia, y a este *cambio* de un estado al siguiente se le llama **transición**.[^18]
+
+Un **proceso** es una sucesión de estados y transiciones (y de respuestas asociadas a los mismos). Su descripción formal se hace mediante dos funciones matemáticas: la de transición y la de salida. La **función de transición** determina el estado siguiente, dependiendo del estado actual y del estímulo que se reciba, y la **función de salida** determina la respuesta para el estado actual y el estímulo recibido (figura 0.9). A partir del estado en un determinado instante y de los estímulos que desde ese instante se vayan recibiendo, el modelo procesal determinará el *proceso* que seguirá el sistema, es decir, la secuencia de estados, de respuestas y de transiciones entre estados.
+
+![Figura 0.9. Modelo procesal ("caja abstracta").](fig-0_9-Modelo-procesal.svg)
+
+Obsérvese que un modelo procesal es un sistema conceptual, y como tal no tiene sentido decir que esté en un estado u otro.[^19] Un proceso, por el contrario, es un sistema material (las actividades internas son reales, aunque ses abstraigan en el modelo), y como tal en cada momento estará en un estado.
+
+En un sistema que se modele con un número finito de estados, $Q=\{q_0, q_1,...,q_n\}$, un número finito de estímulos diferentes, $E=\{e_0, e_1, ..., e_m\}$ y un número finito de respuesas diferentes, $\{s_0, s_1,...,s_r\}$, las funciones de transición f y de salida, g, son discretas: $q_{t+1} = f(e_t, q_t)$ y $s_{t+1} = g(e_t, q_t)$, donde "t" se refiere al "instante actual" y "t + 1" al "instante siguiente".
+
+Ya habíamos avisado que los conceptos de los modelos procesales son abstractos. Quizás a algún lector se lo parezcan demasiado. Para ayudarle, concretaremos con algunos ejemplos en el siguiente apartado. Terminamos éste con una consideración similar a la que hacíamos más arriba con respecto a los "sistemas abiertos": el concepto de proceso, aquí definido de manera general, se utiliza en el campo de los ordenadores con un significado mucho más concreto, como veremos en el apartado 19.8.
+
+## 0.4 Ejemplos de sistemas y modelos
+
 🚧 TODO 🚧
 
+
+-----------
 
 [^1]: Obsérvese que este enunciado no es una definición de ordenador, sino la declaración de unas propiedades del mismo. Dicho de otro modo, en él se utiliza el verbo "ser" en el sentido de la *predicación*, no en el de la *identidad*. (J. Ferrater h H. Leblanc: *Lógica matemática*. Fondo de Cultura Económica, México, 1962).
 
@@ -152,3 +168,8 @@ Es interesante observar que "estructura" y "función" suelen aparecer claramente
 [^16]: "La antítesis entre *estructura y función, morfología y fisiología* está basada en una concepción estática del organismo. En una máquina hay una disposición fija que puede ponerse en movimiento, pero también puede permanecer en reposo [...] Realmente, esta separación entre una estructura preestablecida y los procesos que ocurren en la estructura no se aplica al organismo vivo [...] Lo que se llaman estructuras son procesos lentos de larga duración, y las funciones son procesos rápidos de corta duración. (L. von Bertalanffy: *Problems of life: An evaluation of Modern Biological and Scientific Thought.* Watts, Londres, 1952).
 
 [^17]: Un sistema que exhibe este modo de comportamiento (para la lengua inglesa) es "NetTalk". Se basa en la programación de una red neuronal (T.J. Sejnowski y C.R. Rosemberg: *NetTalk: a paralell network that learns to read alout*. Technical Report TR-86-01, Dep. Electrical Eng., Jhon Hopkins Univ., 1986)
+
+[^18]: Al aplicar estos conceptos a los ordenadores (en la Segunda Parte del curso) veremos que los estados se suceden en la mayoría de las ocasiones sin que aparentemente haya ningún estímulo. Esto es así cuando el sistema está "sincronizado", de modo que cada cierto período de tiempo cambia de un estado al siguiente. Pero, en realidad, siempre hay un estímulo: el paso inexorable del tiempo. En los ordenadores y en otros sistemas digitales este estímulo tiene, además, una materialización bien clara: la señal periódica del reloj.
+
+[^19]: "Los objetos concretos o materiales *son* y *están*: existen físicamente y están en algún estado. Los objetos concepturales, en cambio, *son*: existen (conceptualmente), tienen propiedades conceptuales que no posee objeto concreto alguno, tales como la propiedad de ser un conjunto, o una relación, o un espacio. Los conjuntos no se mueven, las funciones no metabolizan, los espacios no procrean, las estructuras algebraicas no pasan hambre, las derivadas no explotan." M. Bunge: *Epistemología.* Ariel, Barcelona, 1980.
+

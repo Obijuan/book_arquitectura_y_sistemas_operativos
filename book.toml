@@ -15,3 +15,4 @@ build-dir = "book"
 default-theme = "navy"
 preferred-dark-theme = "navy"
 mathjax-support = false # Desactivado a favor de KaTeX
+
