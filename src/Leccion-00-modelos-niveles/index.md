@@ -130,6 +130,39 @@ Ya habíamos avisado que los conceptos de los modelos procesales son abstractos.
 
 ## 0.4 Ejemplos de sistemas y modelos
 
+Los ejemplos que siguen se refieren a sistemas de distinta naturaleza. El lector puede encontrar, dependiendo de sus conocimientos previos, mayor o menor dificultad para la comprensión de los modelos, pero esperamos que, en su conjunto, sirvan estas ilustraciones para que capte las diferencias entre modelos funcionales, estructurales y procesales.
+
+### Ejemplo 1: un sistema mecánico
+
+Consideremos nuevamente la figura 0.5, introducida para ilustrar que un sistema eléctrico (parte inferior) es un modelo analógico de un sistema mecánico (parte superior).[^20] Las ecuaciones matemáticas que aparecen son modelos funcionales de los correspondientes sistemas. En efecto, en el sistema mecánico podemos considerar que la "entrada" o "estímulo" (acción del entorno sobre el sistema) en cada momento es la fuerza aplicada, F(t), y que la "salida" o "respuesta" es el desplazamiento de un punto del sistema, x(t), con relación a la posición de reposo. La ecuación resume todas las relaciones posibles entre la entrada y la salida. Así, si como consecuencia de una fuerza aplicada en el instante $t=0$ el desplazamiento es $x > 0$ y si a partir de ese momento nose aplica ninguna fuerza ($F(t)=0$ para $t>0$), la evolución de la salida, $x(t)$, se puede obtener matemáticamente integrando la ecuación; el resultado, gráficamente, es el que puede verse en la figura 0.10: un movimiento oscilatorio amortiguado.
+
+
+![Figura 0.10. Un modo de comportamiento del sistema mecánico de la figura 0.5.](fig-0_10-modelo-sistema-comportamiento-sistema-mecanico.svg)
+
+El modelo estructural del sistema mecánico se obtiene teniendo en cuenta que está formado por tres partes que actúan de manera interrelacionada: una masa, un amortiguador, y un resorte. La fuerza total aplicada se distribuye entre las tres:
+
+$$F(t) = F_m(t)+F_a(t)+F_r(t)$$
+
+y el comportamiento (modelo funcional) de cada parte viene dado por leyes de la Física:
+
+$$F_m(t) = M . \frac{d^2x}{dt^2}$$
+
+$$F_a(t) = D . \frac{dx}{dt}$$
+
+$$F_r(t) = K . x $$
+
+Obsérvese que el modelo estructural, al definir por completo la interrelación entre partes y el modelo funcional de cada parte, determina totalmente el modelo funcional del sistema.
+
+Para establecer un modelo procesal hemos de definir las *variables de estado*. De acuerdo con la definición de "estado" dada anteriormente, estas variables deben ser tales que baste con conocer sus valores en un instante $t=t_0$ y los valores de $F(t)$ desde $t = t_0$ hasta $t > t_0$ para poder calcular $x(t)$ en $t > t_0$. Pueden servir como variables de estado $x(t)$ y $v(t)=\frac{dx(t)}{dt}$: desde un punto de vista matemático, para integrar la ecuación que aparece en la figura 0.5 (y poder así calcular x(t)) hacen falta dos condiciones iniciales: $x(t_0)$ y $x'(t_0)$; desde un punto de vista intuitivo, basta conocer la posición y la velocidad con que se mueve el sistema en un momento para saber dónde va a estar después. El modelo procesal viene dado por las *ecuaciones de estado*:
+
+$$\frac{dx(t)}{dt}=v(t)$$
+
+$$\frac{dv(t)}{dt}=-\frac{K}{M}.x(t) - \frac{D}{M}.v(t) + \frac{1}{M}.F(t)$$
+
+que determinan, de forma continua, el cambio de un estado (x(t), v(t)) al siguiente. El **espacio de estados** es el conjunto de valores posibles del par (x(t), v(t)): todo el plano real. A partir de un estado inicial, y para un estímulo F(t), la sución de estados (puntos en el plano) forma una **trayectoria**. En la figura 0.11 puede verse la trayectoria corresponiente al caso de la figura 0.10 ($x(t_0)>0$, $v(t)=0$ y $F(t)=0$ para $t>t_0).
+
+![Figura 0.11. Trayectoria correspondiente al comportamiento de la figura 0.9.](fig-0_11-trayectoria-comportamiento-fig-0_9.svg)
+
 🚧 TODO 🚧
 
 
@@ -173,3 +206,4 @@ Ya habíamos avisado que los conceptos de los modelos procesales son abstractos.
 
 [^19]: "Los objetos concretos o materiales *son* y *están*: existen físicamente y están en algún estado. Los objetos concepturales, en cambio, *son*: existen (conceptualmente), tienen propiedades conceptuales que no posee objeto concreto alguno, tales como la propiedad de ser un conjunto, o una relación, o un espacio. Los conjuntos no se mueven, las funciones no metabolizan, los espacios no procrean, las estructuras algebraicas no pasan hambre, las derivadas no explotan." M. Bunge: *Epistemología.* Ariel, Barcelona, 1980.
 
+[^20]: Evidentemente, la inversa también es cierta: el sistema mecánico puede utilizarse como modelo analógico del eléctrico.
