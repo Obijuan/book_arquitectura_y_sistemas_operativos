@@ -159,9 +159,41 @@ $$\frac{dx(t)}{dt}=v(t)$$
 
 $$\frac{dv(t)}{dt}=-\frac{K}{M}.x(t) - \frac{D}{M}.v(t) + \frac{1}{M}.F(t)$$
 
-que determinan, de forma continua, el cambio de un estado (x(t), v(t)) al siguiente. El **espacio de estados** es el conjunto de valores posibles del par (x(t), v(t)): todo el plano real. A partir de un estado inicial, y para un estímulo F(t), la sución de estados (puntos en el plano) forma una **trayectoria**. En la figura 0.11 puede verse la trayectoria corresponiente al caso de la figura 0.10 ($x(t_0)>0$, $v(t)=0$ y $F(t)=0$ para $t>t_0).
+que determinan, de forma continua, el cambio de un estado (x(t), v(t)) al siguiente. El **espacio de estados** es el conjunto de valores posibles del par (x(t), v(t)): todo el plano real. A partir de un estado inicial, y para un estímulo F(t), la sución de estados (puntos en el plano) forma una **trayectoria**. En la figura 0.11 puede verse la trayectoria corresponiente al caso de la figura 0.10 ($x(t_0)>0$, $v(t)=0$ y $F(t)=0$ para $t>t_0$).
 
 ![Figura 0.11. Trayectoria correspondiente al comportamiento de la figura 0.9.](fig-0_11-trayectoria-comportamiento-fig-0_9.svg)
+
+### Ejemplo 2: un sistema ecológico
+
+Consideremos dos especies animales, una de depredadores y otra de presas. Para establecer un modelo, hagamos las siguientes hipótesis:
+
+1. Las variables $P(t)$ y $D(t)$ representarán a los números de presas y de depredadores existentes en el instante $t$. Sus valores son números enteros, pero nuestro modelo las tratará como variables continuas (con valores reales).
+2. Las presas se reproducen sin limitación; si no hubiese depredadores su crecimiento sería exponencial.
+3. Los depredadores viven y se reproducen si hay suficientes presas; si no hubiese presas, su número tendería asintóticamente a cero.
+4. La tasa de crecimiento de la población de presas depende, por una parte, del número de presas (cuanto más hay, más crece), y, por otro, del *número de encuntros*, que es proporcional al producto $P(t) \times D(t)$ (cuanto más hay menos crece la población).
+5. La tasa de crecimiento de la población de depredadores depende igualmente del número de depredadores (cuanto más hay, menos crece, porque tienen que repartirse a las presas), y del número de encuentros (cuanto más hay, más crece).
+6. Abstraemos cualquier iteración con el entorno.
+
+Esta último hipótesis equivale a decir que el modelo es un *sistema cerrado*. Por tanto, no existe modelo funcional.
+
+Teniendo en cuenta las hipótesis 4 y 5 es fácil expresar gráficamente las relaciones entre tipo de modelo estructural se llama *diagrama causal*.
+
+🚧 TODO 🚧: Figura 0.12. Modelo estructural (diagrama causal) de las presas y los depredadores.
+
+Y combinando todas las hipótesis tampoco es difícil cuantificar las relaciones:
+
+$$\frac{dP}{dt}=K_{11}.P - K_{12}.P.D$$
+$$\frac{dD}{dt}= -K_{22} . D + K_{21}.P.D$$
+
+Estas son las conocidas *ecuaciones de Volterra*, que constituyen un modelo procesal de nuestro sistema.
+
+### Ejemplo 3: un sumador binario
+
+
+
+
+
+
 
 🚧 TODO 🚧
 
