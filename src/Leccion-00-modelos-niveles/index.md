@@ -178,7 +178,8 @@ Esta último hipótesis equivale a decir que el modelo es un *sistema cerrado*. 
 
 Teniendo en cuenta las hipótesis 4 y 5 es fácil expresar gráficamente las relaciones entre tipo de modelo estructural se llama *diagrama causal*.
 
-🚧 TODO 🚧: Figura 0.12. Modelo estructural (diagrama causal) de las presas y los depredadores.
+![Figura 0.12. Modelo estructural (diagrama causal) de las presas y los depredadores.](fig-0_12-modelo-estructural-presas-depredadores.svg)
+
 
 Y combinando todas las hipótesis tampoco es difícil cuantificar las relaciones:
 
@@ -189,8 +190,56 @@ Estas son las conocidas *ecuaciones de Volterra*, que constituyen un modelo proc
 
 ### Ejemplo 3: un sumador binario
 
+Los dos ejemplos anteriores se referían a *sistemas continuos*: las magnitudes de interés toman valores en una escala de números reales. Por ese motivo, los modelos están expresados en el tipo de ecuaciones matemáticas que permiten trabajar con variables de esta naturaleza. Veamos ahora un sistema que es *discreto*, en el sentido de que las magnitudes sólo pueden tomar, en cada momento, uno de entre un conjunto finito de valores, y además los cambios de esos valores no ocurren continuamente a lo largo del tiempo, sino solamente en instantes determinados. Se trata de un sistema electrónico digital sencillo: un sumador binario serial.
+
+En primer lugar, su *descripción funcional*. Un sumador binario es un sistema que suma dos números expresados en el sistema de numeración de base 2 y da el resultado en el mismo sistema.[^21] En los ordenadores es un componente de la unidad aritmética y lógica que funciona en paralelo, es decir, los *bits* (dígitos binarios) que constituyen los sumandos se presentan todos al mismo tiempo (es un circuito combinacional[^22]), pero aquí consideramos el caso del sumador *serial*: los bits de los sumandos se presentan secuencialmente y por parejas: primero se presentan los dos bits de menor peso, el sumador los suma y obtiene el bit de menor peso del resultado (y toma nota del acarreo, si lo hay, pero esto es una actividad interna), luego los siguientes, etc. La figura 0.13 presenta al sistema como una caja negra, y en la figura 0.14 puede verse un ejemplo de comportamiento que corresponde a 011001+011101 = 110110.[^23] En realidad, el comportamiento está definido por los valores de la entrada y la salida, pero la figura incluye más información: la variable *interna z* representa al acarreo; $q$ (también interna) es el "acarreo retardado", o acarreo de la suma binaria en el instante $t-Θ$, que ha de sumarse con $e_1^t$ y $e_2^t$ en el instante $t$. $R$ es la "señal de reloj", que marca el período, $Θ$, de presentación de los estímulos, y éste sí es un parámetro funcional importante. El modelo funcional (que incluye a todos los comportamientos particulares posibles) puede expresarse formalmente de una manera muy sencilla: $S=E_1+E_2$, donde $S$, $E_1$, y $E_2$ representan de manera general números expresados en binario (cadenas de bits).
+
+![Figura 0.13. Sumador binario serial: modelo funcional.](fig-0_13-sumador-binario-serial-modelo-funcional.svg)
+
+![Figura 0.14. Sumador binario serial: Ejemplo de comportamiento.](fig-0_14-sumador-binario-serial-ejemplo.svg)
+
+Un *modelo estructural* del sumador consta de dos componentes, una "etapa de sumador" y un "circuito de retardo", conectados según indica la figura 0.15. Para que el modelo estructural esté completo (y pueda determinar al modelo funcional) hay que dar modelos funcionales de ambos componentes. Si $e_1$, $e_2$, $s$, $z$, y $q$ representan dígitos binarios, estos modelos son:
+
+Para la etapa de sumador:
+
+$$s=(e_1 + e_2 + q)(mod 2)$$
+
+$$
+z = 
+\begin{cases} 
+0 & \text{si } e_1+e_2 + q = 0 \text{ o si } e_1 + e_2 + q = 1 \\
+1 & \text{si } e_1 + e_2 + q = 10 \text{ o si } e_1 + e_2 + q = 11
+\end{cases}
+$$
+
+![Figura 0.15. Sumador binario serial: modelo estructural.](fig-0_15-sumador-binario-serial-modelo-estructural.svg)
 
 
+Es decir, $s$ es el bit menos significativo de la suma binaria de los dos bits que se presentan en un momento dado a la entrada, junto con el posible acarreo ($q$) de la suma anterior, y $z$ es el acarreo generado que ha de guardarse para la suma de los siguientes.
+
+Para el circuito de retardo:
+
+$$q(t) = z(t-Θ)$$
+
+donde $Θ$ debe coincidir con el periódo de presentación de los estímulos (bits) a la entrada. Es decir, el acarreo que en cada momento hay que sumar es el que se haya podido generar en la suma de los bits precedentes.
+
+Obsérvese que en la especificación de la etapa de sumador no se ha indicado explícitamnte que las variables son función del tiempo ($s(t)$, $e1(t)$, etc..). Podemos proceder así porque este componente no tiene "memoria": su respuesta en un instante depende solamente de las entradas en ese instante (desde el punto de vista electrónico, es un "circuito combinacional").
+
+Finalmente, veamos el *modelo procesal* del sumador binario serial. Más arriba hemos definido el concepto de "estado" como "información mínima necesaria en un instante dado para, conociendo la evolución de los estímulos a partir de ese instante, predecir la evolución de las respuestas". En este caso, la única información necesaria para poder predecir la salida en si ha habido acarreo anteriormente o no. Es decir, el sistema puede estar en uno de dos estados posibles, que podemos representar con los símbolos $q_0$ (correspondiente a $q=0$, no acarreo previo) y $q_1$ (correspondiente a $q=1$). El *espacio de estados* es finito, y consta sólo de dos "puntos" (dos estados concretos):
+
+$$Q = \{q_0, q_1\}$$
+
+El conjunto de estímulos diferentes también es finito:
+
+$$E=\{00, 01, 10, 11\}$$
+
+así como el de respuestas:
+
+$$S=\{0,1\}$$
+
+Como decíamos antes, dados el estado actual y el estímulo, la función de transición, $f(e,q)$, debe dar el estado siguiente, y la función de salida, $g(e,q)$, la respuesta. Por ejemplo, si hay acarreo ($q=1$) y el estímulo es $e_1=1, e_2=0$, la respuesta debe ser $s=0$ y el acarreo $z=1$, es decir: $g(10,1)=0, f(10,1)=1$. Un análisis exhaustivo de las $4 \times 2 = 8$ combinaciones posibles de entradas y estados nos permite especificar completamente las funciones $f$ y $g$. En la figura 0.16 aparece esta especificación en dos formas equivalentes: como una *tabla de transiciones* y como un *diagrama de transiciones*.
+
+🚧 TODO 🚧: Figura 0.16. Sumador binario serial: modelo procesal.
 
 
 
@@ -239,3 +288,11 @@ Estas son las conocidas *ecuaciones de Volterra*, que constituyen un modelo proc
 [^19]: "Los objetos concretos o materiales *son* y *están*: existen físicamente y están en algún estado. Los objetos concepturales, en cambio, *son*: existen (conceptualmente), tienen propiedades conceptuales que no posee objeto concreto alguno, tales como la propiedad de ser un conjunto, o una relación, o un espacio. Los conjuntos no se mueven, las funciones no metabolizan, los espacios no procrean, las estructuras algebraicas no pasan hambre, las derivadas no explotan." M. Bunge: *Epistemología.* Ariel, Barcelona, 1980.
 
 [^20]: Evidentemente, la inversa también es cierta: el sistema mecánico puede utilizarse como modelo analógico del eléctrico.
+
+[^21]: En el apéndice A se resume la aritmética con base 2, o *binaria*, en la que sólo hay dos dígitos, 0 y 1.
+
+[^22]: En el apéndice B se resumen los principios de los circuitos lógicos combinacionales y secuenciales.
+
+[^23]: Para interpretar bien la figura 0.14, obsérvese que los dígitos binarios están representados en ella en sentido inverso a como los escribimos sobre el papel.
+
+
