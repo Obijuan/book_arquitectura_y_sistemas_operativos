@@ -363,7 +363,21 @@ El ordenador se puede considerar como una herramienta (punto de vista del usuari
 
 ### Diseño, implementación y especificaciones
 
+En las actividades ligadas a la concepción y construcción de un artefacto es útil distinguir entre **diseño** e **implementación**. El diseño comienza con una descripción de las funciones pretendidas (un *modelo funcional) del sistema, y termina con una descripción de los componentes abstractos y sus interrelaciones y procesos (modelos estructural abstracto y procesal). En la implementación se materializa el modelo estructural en otro cuyos componentes son concretos. La figura 0.20 (que el lector debe situar en el contexto de la figura 0.3) muestra los tipos de modelos más ligados a cada actividad.
 
+
+![Figura 0.20. Modelos de artefactos más adecuados según la pragmática.](fig-0_20-Modelo-artefactos-mas-adecuados-pragmatica.svg)
+
+
+Además de su utilidad dentro de cada actividad, los modelos también son vehículos de comunicación entre unas actividades y otras. Cuando sirven a esta función, los modelos suelen llamarse **especificaciones**. Y, para reducir al mínimo posible los errores de comunicación, conviene que estos modelos estén expresados en un *lenguaje formal*. Se habla entonces de *especificaciones formales*.
+
+Para ilustarar lo anterior, volvamos al ejemplo del sumador binario. Partiendo de su especificación funcional, el resultado del diseño es el modelo procesal de la figura 0.16 y el estructural de la figura 0.15. La implementación en este caso consistiría en buscar los componentes físicos (sistemas electrónicos digitales) que tengan las funciones requeridas por el modelo estructural. 
+
+Un hecho interesante aparece aquí: al bajar el nivel de abstracción, en la implementación pueden ponerse de manifiesto restricciones físicas que obligan a volver sobre las especificaciones del diseño. Así, en la especificación funcional podría haberse decidido un determinado valor, muy pequeño, del parámetro $θ$ (intervalo entre presentación de los bits). En el modelo estructural procedente del diseño, este valor es el que debe tener el "elemento de retardo". Pero supongamos, ya en la implementación, que al buscar un componente electrónico que materialice a este elemento,[^27] no encontramos ninguno con ese valor tan pequeño.[^28] En este caso sencillo no hay más solución que relajar las especificaciones (conformándose con un sistema más lento); en otros, en los que existen modelos alternativos, es posible rehacer el diseño de modo tal que la implementación sea factible.
+
+La implementación no siempre consiste en construir un modelo estructural con componentes físicos. El caso más notorio es el que se da en programación. Para el diseño de un programa se parte de unas especificaciones funcionales y se llega a un modelo estructural de componentes abstractos, definido cada uno por su función. Así, en el ejemplo del programa para el cálculo del factorial se podría llegar a la descomposición en componentes o *módulos* que resumía la figura 0.18(c). Para programas complejos esta descomposición modular es recursiva: para cada módulo se establecen un modelo estructural y un modelo procesal, cada componente del mismo vuelve a descomponerse, y así sucesivamente hasta llegar a funciones simples. En cualquier caso, el modelo estructural resultante incluye módulos definidos funcionalmente. La implementación consiste en este caso en plasmar esas funciones abstractas en construcciones concretas con un lenguaje de programación.
+
+### Productos y ciclo de vida
 
 
 
@@ -424,3 +438,7 @@ El ordenador se puede considerar como una herramienta (punto de vista del usuari
 [^25]: Obsérvese que aquí, a diferencia del caso del sumador, podemos asociar la salida a los estados, no a las transiciones: $s=0$ está asociada a $q_0$, y $s=1$ a los otros tres; la función de salida es $g(q)$, no $g(e,q)$.
 
 [^26]: Es bien sabido que todos los usuarios pueden, en ocasiones, beneficiarse del conocimiento de modelos estructurales y procesales. Pero cuando un usuario recurre a uno de estos modelos es por una de dos razones: o bien porque su modelo funcional no es  suficiente para resolver todos sus problemas, o bien porque deja de ser estrictamente un usuario (como ocurre cuando el conductor abre el capó).
+
+[^27]: Un biestable, como se explica en el apéndice B.
+
+[^28]: O bien lo encontramos pero a un coste prohibitivo. El criterio de coste, aquí omitido, forma parte importante de las especificaciones iniciales del diseño.
