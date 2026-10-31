@@ -379,7 +379,17 @@ La implementación no siempre consiste en construir un modelo estructural con co
 
 ### Productos y ciclo de vida
 
+Más arriba hemos visto, en un ejemplo sencillo (el del sumador binario), que como resultado de la implementación puede ser necesario rehacer las especificaciones para el diseño.
 
+Entendemos por "*producto*" un artefacto que se obtiene como resultado de un proceso de fabricación. Es decir, no sólo es un sistema diseñado e implementado por el hombre; este diseño y esta implementación están condicionados por la existencia de un mercado y, frecuentemente, de una normativa. Cuando el artefacto es un producto, el resultado de la implementación es un **prototipo**, que debe someterse a pruebas antes de su producción o fabricación. Como resultado de estas pruebas, y también a lo largo de la vida del producto es posible que aparezca de nuevo la necesidad de un rediseño.
+
+La figura 0.21 ilustra esta naturaleza recurrente de las actividades ligadas a concepción, construcción y uso de un producto. El *modelo conceptual* es una descripción de la funcionalidad del sistema, y el diseño consiste en transformar esas especificaciones funcionales en modelos estructurales y procesales.
+
+![Figura 0.21. Ciclo de vida de un producto.](fig-0_21-Ciclo-de-vida-de-un-producto.svg)
+
+La sucesión de fases por las que pasa un producto desde su concepción hasta su abandono por obsolescencia o envejecimiento se llama **ciclo de vida**. La figura 0.21 representa un modelo muy general de ciclo de vida. En áreas particulares de la ingeniería se han propuesto ciclos de vida especializados para sus productos. Así, en la *ingeniería del software* un ciclo de vida "clásico" es el formado por las fases sucesivas de *planificación, análisis de requisitos* (correspondientes, aproximadamente, a la "concepción" de la figura 0.21), *diseño, codificación* (que corresponde a "implementación"), *pruebas y evaluación y mantenimiento*.
+
+## 0.6 Jerarquías de abstracciones
 
 
 🚧 TODO 🚧
