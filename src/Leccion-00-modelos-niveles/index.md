@@ -269,9 +269,57 @@ Este es un modelo procesal para un programa concreto. En el apartado 19.8 estudi
 
 ### Ejemplo 5: una casa encantada
 
+"Querido amigo:
 
+Al poco de comprar esta vieja mansión me sorprendió desagradablemente el comprobar que está hechizada con dos sonidos que la hacen prácticamente inhabitable: un canto picaresco y una risa sardónica.
 
+Aún conservo, sin embargo, alguna esperanza, pues la experiencia me ha demostrado que su comportamiento obedece a ciertas leyes, oscuras pero infalibles, que permiten modificarlo tocando el órgano y quemando incienso.
 
+En cada minuto, cada sonido está presente o ausente. La situación en el minuto siguiente es así:
+
+El canto conserva el mismo estado (presente o ausente) salvo si en el minuto actual no se oye la risa y toco el órgano, en cuyo caso el canto pasa al estado opuesto. 
+
+En cuanto a la risa, si no quemo incienso, aparece o no según que el canto estuviese presente o ausente (de modo que la risa imita al canto con un minuto de retardo). Ahora bien, si quemo incienso la risa hace justamente lo contrario de lo que hace el canto. En el momento en el que le escribo estoy oyendo a la vez la risa y el canto. Le quedaré sumamente agradecido si me aconseja sobre las manipulaciones de órgano e inclienso que debo seguir para restablecer definitivamente la calma."
+
+El comportamiento que describe esta carta (tomada de un inolvidable libro de Ross Ashby[^24]) caracteriza a un sistema cuyas entradas y salidas se pueden formalizar con variables binarias: I, O (entradas), R y C (salidas) (I=0 si no se quema incienso, I=1 si se quema, etc.). El mismo texto de la carta es ya un *modelo funcional*, que como se puede formalizar con el lenguaje de la lógica:
+
+párrafo 4: $C_{t+1} = C_t \oplus (\bar{R_t} . O_t)$  
+párrafo 5: $R_{t+1} = I_t \oplus C_t $  
+
+También podemos establecer un *modelo estructural*, considerando dos componentes, los agentes que generan la risa y el canto y las influencias mutuas entre ellos y con las entradas (figura 0.18). Pero el más interesante para este ejemplo es un *modelo procesal* que, como veremos, conduce inmediatmanete a una solución del problema.
+
+![Figura 0.18. Modelo estructural (diagrama de influencias) de la casa encantada.](fig-0_18-Modelo-estructural-casa-encantada.svg)
+
+$R$ y $C$ son las variables de estado (además de ser las de salida). En efecto, según explican los párrafos 4 y 5 de la carta, basta con saber qué valor tienen esas variables en un minuto determinado y qué estímulos (valores de $I$ y $O$ ) se dan en ese minuto para conocer los valores que tomarán $R$ y $C$ en el minuto siguiente.
+
+El espacio de estados consta así de cuatro estados:
+
+* $q_0$, correspondiente a $R=0$, $C=0$ (no se oye la risa ni el canto)
+* $q_1$, correspondiente a $R=0$, $C=1$ (no se oye la risa, sí el canto)
+* $q_2$, correspondiente a $R=1$, $C=0$ (se oye la risa, no el canto)
+* $q_3$, correspondiente a $R=1$, $C=1$ (se oye la risa y el canto)
+
+En  cada uno de estos cuatro estados pueden aplicarse cuatro estímulos diferentes:
+
+* $e_0$: $O=0, I=0$ (no tocar el órgano ni quemar incienso)
+* $e_1$: $O=0, I=1$ (no tocal el órgano pero quemar incienso)
+* $e_2$: $O=1, I=0$ (tocar el órgano pero no quemar incienso)
+* $e_3$: $O=1, I=1$ (tocar el órgano y quemar incienso al mismo tiempo)
+
+Pues bien, basta con considerar detenidamente los párrafos 4 y 5 de la carta para especificar por completo la función de transición, es decir, para determinar las 4 x 4 = 16 transiciones entre estados. El resultado, en forma de diagrama de transiciones, puede verse en la figura 0.19.
+
+![Figura 0.19. Modelo procesal de la casa encantada.](fig-0_19-Modelo-procesal-casa-encantada.svg)
+
+A la vista de este diagrama, la solución al problema que plantea la carta aparece fácilmente: el estado inicial es $q_3$; de él se puede pasar a $q_1$ mediante $e_1$ o $e_3$, y de éste a $q_0$ mediante $e_3$. Expresándolo en los mismos términos epistolares: "Durante un minuto, queme usted incienso, y, si le apetece, toque también el órgano; desaparecerá la risa. Durante el minuto siguiente queme incienso y toque el órgano a la vez, y al finalizar ese minuto cese toda actividad. Si no vuelve a manipular ni el órgano ni el incienso, se habrá lirado para siempre del encantamiento".
+
+Hemos considerado como salidas $R$ y $C$, que son también las variables de estado (por este motivo, en este caso las ecuaciones de estado son las mismas ecuaciones del modelo funcional escritas más arriba). También podemos definir una salida binaria, $s$, que represente la presencia o ausencia de algún sonido:[^25]
+
+* $s=0$ si no hay ningún sonido ($R=0$, $C=0$)
+* $s=1$ si hay algún sonido
+
+El lector puede observar en el diagrama otras soluciones (con secuencias de estímulos más largas que la propuesta). Observe también que, afortunadamente para el propietario de la casa, el estado $q_0$ (el único con $s=0$) es estable para la entrada $e_0$
+
+## 0.5 Artefactos y herramientas, diseñadores y usuarios
 
 🚧 TODO 🚧
 
@@ -324,4 +372,6 @@ Este es un modelo procesal para un programa concreto. En el apartado 19.8 estudi
 
 [^23]: Para interpretar bien la figura 0.14, obsérvese que los dígitos binarios están representados en ella en sentido inverso a como los escribimos sobre el papel.
 
+[^24]: W.R. Ashby, *op.cit.*
 
+[^25]: Obsérvese que aquí, a diferencia del caso del sumador, podemos asociar la salida a los estados, no a las transiciones: $s=0$ está asociada a $q_0$, y $s=1$ a los otros tres; la función de salida es $g(q)$, no $g(e,q)$.
