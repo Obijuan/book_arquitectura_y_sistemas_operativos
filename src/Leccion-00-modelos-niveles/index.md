@@ -359,6 +359,10 @@ El diseño de un artefacto suele incluir muchas facetas, y con frecuencia sólo 
 
 ### Usuario y diseñadores
 
+El ordenador se puede considerar como una herramienta (punto de vista del usuario) o como un artefacto a construir (punto de vista del diseñador). Pero esta diferenciación no es tan neta como a primera vista pudiera parecer: el diseñador de programas de aplicación es usuario de un sistema operativo; el diseñador de éste es usuario de una máquina hardware, diseñada haciendo uso de placas, que están construidas con circuitos integrados...Cada una de estas personas necesita modelos diferentes para ejercer su actividad: en general, el usuario de un sistema necesita un modelo funcional del mismo, y utiliza modelos estructurales y procesales de los sistemas que diseña con él.
+
+### Diseño, implementación y especificaciones
+
 
 
 
