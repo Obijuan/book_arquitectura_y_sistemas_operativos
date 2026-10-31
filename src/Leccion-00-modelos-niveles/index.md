@@ -395,6 +395,14 @@ Un ordenador es un *sistema complejo* que puede describirse mediante diferentes 
 
 ### Modelos y abstracciones
 
+La modelación y la abstracción son actividades intelectuales indisolublemente unidas. En efecto, el modelo sólo representa los rasgos de interés del original, es decir, *hace abstracción* de los que no son de interés para el propósito del modelo.
+
+En el ejemplo del sumador binario serial abstraíamos detalles como los valores de voltajes que puedan corresponder a "0" y a "1", o como el hecho de que los cambios (de "0" a "1" y de "1" a "0") no son instantáneo, sino que "en realidad" son graduales, con un tiempo de transición. (Las comillas son debidas a que los cambios se describen como graduales, o como funciones continuas del tiempo, en un nivel de abstracción inferior, pero si aún descendemos más en el nivel de abstracción y aplicamos modelos de la física cuántica nos encontramos "en realidad" con cambios nuevamente discretos).
+
+## Jerarquías de niveles de abstracción
+
+
+
 🚧 TODO 🚧
 
 
