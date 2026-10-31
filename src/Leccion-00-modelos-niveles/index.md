@@ -399,9 +399,24 @@ La modelación y la abstracción son actividades intelectuales indisolublemente 
 
 En el ejemplo del sumador binario serial abstraíamos detalles como los valores de voltajes que puedan corresponder a "0" y a "1", o como el hecho de que los cambios (de "0" a "1" y de "1" a "0") no son instantáneo, sino que "en realidad" son graduales, con un tiempo de transición. (Las comillas son debidas a que los cambios se describen como graduales, o como funciones continuas del tiempo, en un nivel de abstracción inferior, pero si aún descendemos más en el nivel de abstracción y aplicamos modelos de la física cuántica nos encontramos "en realidad" con cambios nuevamente discretos).
 
-## Jerarquías de niveles de abstracción
+### Jerarquías de niveles de abstracción
 
+Acabamos de sugerir que un mismo sistema (el sumador binario serial) puede describirse no sólo con distintos modelos, sino también en distintos niveles de abstracción.
 
+Pensar en distintos niveles de abstracción es algo habitual en las ciencias que tratan con sistemas complejos. Por ejemplo, en las ciencias biológicas se estudian los niveles bioquímico (biología molecular), de célula (citología), de tejido (histología), de órgano (anatomía) y de organismo. En cada nivel se utilizan los tres tipos de modelos que hemos explicado (aunque no con esos nombres). Así, en el nivel de célula la morfología celular utiliza modelos estructurales (describe a las células como ensamblajes de subsistemas), la fisiología celular utiliza modelos procesales (describe los procesos internos que explican el metabolismo, el crecimiento, la división, etc.) y desarrolla modelos funcionales que son de utilidad para los niveles superiores.
+
+De una manera general, un nivel de abstracción para la descripción de un sistema se caracteriza por:
+
+* La *naturaleza de las variables* que representan a las magnitudes (estímulos, respuestas y estados) de interés: pueden ser continuas o discretas, numéricas o simbólicas.
+* El *espacio de estados* en el que se formulan modelos procesales.
+* Los *componentes* que permiten establecer modelos estructurales. Estos componentes estarán descritos como modelos funcionales de sistemas del nivel inferior.
+* Las *leyes de composición* que rigen la manera de interconectar componentes.
+* Las *leyes de comportamiento* que determinan el comportamiento (modelo funcional) de un sistema a partir del modelo estructural del mismo y de los modelos funcionales de los componentes, o bien a partir del modelo procesal.
+* El *lenguaje* (o lenguajes) con el que expresamos las leyes y formulamos modelos.
+
+Entre estos niveles existe una relación de orden: los componentes de los modelos estructurales del nivel *i* son sistemas del nivel *i-1*. El distema "final" (aquél para el que se construye la jerarquía) biene descrito por los modelos del más alto nivel. "Descender" (pasar del nivel *i* al *i-1*) en la jerarquía es *concretar* detalles, y "ascender" es *abstraer*. Cuando la jerarquía corresponde a un artefacto, y se utiliza para su construcción, la implementación del sistema del nivel *i* implica un "descenso" al nivel *i-1*.
+
+## 0.7 Jerarquía de niveles para los ordenadores
 
 🚧 TODO 🚧
 
