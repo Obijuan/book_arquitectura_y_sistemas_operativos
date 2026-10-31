@@ -247,8 +247,27 @@ Los tres modelos (funcional, estructural y procesal) son tres formas distintas d
 
 ### Ejemplo 4: un programa de ordenador
 
+Volvamos al ejemplo del apartado anterior sobre el modelo estructural de un programa de ordenador (figura 0.8(c)) cuyo modelo funcional es "resultado=factorial(dato)". El modelo procesal puede verse en la figura 0.17, a la que añadiremos estos comentarios:
 
+1. Inicialmente, mientras el ordenador no empiece a ejecutar el programa, el proceso no existe. El modelo procesal incluye un estado inicial para esta situación al que llamamos *nonato*.
 
+![Figura 0.17. Modelo procesal del ordenador durante el proceso del cálculo del factorial.](fig-0_17-modelo-procesal-ordenador-calculo-factorial.svg)
+
+2. En cuanto el programa empieza a ejecutarse, el proceso pasa al estado *activo*, pero durante un tiempo muy pequeño, porque lo primero que hace es "pedir" un dato.
+
+3. La unidad ("periférico") por la que se introduce el dato (el teclado, por ejemplo), es mucho más lenta que la unidad de procesamiento. Mientras no se haya terminado de leer el dato, el proceso no puede continuar: está *bloqueado*.
+
+4. Una vez obtenido el dato, el proceso vuelve a estar *activo*. Durante este segundo estado activo el programa hace la transformación a la representación interna, llama a la función, ésta calcula el factorial y el programa traduce el resultado a la representación a escribir por la pantalla.
+
+5. De nuevo el proceso pasa a *bloqueado*, ahora esperando que el resultado quede escrito.
+
+6. Terminada la salida del resultado, el proceso vuelve a estar activo (seghuramente, y como al principio, por muy poco tiempo).
+
+7. Como el proceso ha terminado, pasa al estado *muerto*.
+
+Este es un modelo procesal para un programa concreto. En el apartado 19.8 estudiaremos un modelo genérico, de gran importancia para el estudio del funcionamiento del ordenador durante la ejecución de programas.
+
+### Ejemplo 5: una casa encantada
 
 
 
