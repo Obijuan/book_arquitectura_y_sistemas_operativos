@@ -239,7 +239,17 @@ $$S=\{0,1\}$$
 
 Como decíamos antes, dados el estado actual y el estímulo, la función de transición, $f(e,q)$, debe dar el estado siguiente, y la función de salida, $g(e,q)$, la respuesta. Por ejemplo, si hay acarreo ($q=1$) y el estímulo es $e_1=1, e_2=0$, la respuesta debe ser $s=0$ y el acarreo $z=1$, es decir: $g(10,1)=0, f(10,1)=1$. Un análisis exhaustivo de las $4 \times 2 = 8$ combinaciones posibles de entradas y estados nos permite especificar completamente las funciones $f$ y $g$. En la figura 0.16 aparece esta especificación en dos formas equivalentes: como una *tabla de transiciones* y como un *diagrama de transiciones*.
 
-🚧 TODO 🚧: Figura 0.16. Sumador binario serial: modelo procesal.
+![Figura 0.16. Sumador binario serial: modelo procesal.](fig-0_16-sumador-binario-serial-modelo-procesal.svg)
+
+La tabla indica los ocho valores de la función $f$ (los escritos delante de los símbolos "/") y los ocho valores de $g$ (los escritos detrás). En el diagrama, los círculos corresponden a estados, y los arcos a transiciones entre estados; cada arco, etiquetado "$e_1e_2/s$", corresponde a una transición de un estado a otro (que puede ser el mismo) debida a la entrada $(e_1, e_2)$, generándose la salida $s$.
+
+Los tres modelos (funcional, estructural y procesal) son tres formas distintas de *descripbir* al mismo sistema. Dependiendo de lo que se pretenda puede ser más interesante uno u otro. Así, desde un punto de vista de "usuario" (un diseñador de un sistema de nivel superior, en el que se utiliza éste como componente o subsistema), lo que importa es el modelo funcional (incluido el parámetro $Θ$). Pero desde un punto de vista de "diseñador" los modelos más útiles son el estructural y el procesal.
+
+### Ejemplo 4: un programa de ordenador
+
+
+
+
 
 
 
