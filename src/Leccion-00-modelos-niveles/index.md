@@ -349,6 +349,16 @@ Los modelos para la comprensión son generalmente conceptuales, más o menos for
 
 ### La actividad de diseño
 
+El término "diseño" se aplica tanto en la ingeniería como en actividades muy distantes de ella en el plano axiológico (los valores esenciales en esas actividades son de naturaleza estética) y en otras de naturaleza "mixta" (arquitectura, urbanismo...). Todas estas actividades comparten una orientación creativa, la idea de ensamblar partes para construir un sistema con ciertos fines.
+
+El objeto de la actividad de diseño es siempre un *artefacto*. Son artegfactos un automóvil, un ordenador, un edificio..., pero también un sistema axiomático, un sistema de transporte, un sistema social...Puede discutirse si el diseño del segundo tipo de sistemas es "ingeniería", pero hay princpios y herramientas que son de utilidad en el diseño de ciertos tipos de sistemas y que pueden extenderse a otros.
+
+En el proceso de diseño se pueden utilizar como herramientas sistemas materiales o concepturales. La herramienta material más general y flexible es el ordenador, que, con técnicas de simulación y visualización, permite prever el funcionamiento del sistema que se está diseñando; esto es lo que se llama CAD ("Computer-Aided Design": diseño asistido por ordenador). Las herramientas concepturales son las teorías, metodologías y modelos disponibles para el tipo de artefacto a diseñar.
+
+El diseño de un artefacto suele incluir muchas facetas, y con frecuencia sólo se dispone de modelos formalizados y sustentados por una teoría para algunas de ellas. Esta carencia se suple con *heurísticos*: "trucos" o reglas empíricas cuya utilidad está avalada por la experiencia.
+
+### Usuario y diseñadores
+
 
 
 
