@@ -321,6 +321,39 @@ El lector puede observar en el diagrama otras soluciones (con secuencias de est�
 
 ## 0.5 Artefactos y herramientas, diseñadores y usuarios
 
+Analicemos ahora la vertiente pragmática de los modelos. Un modelo de un sistema puede servir a la persona que hace uso de él para varios fines:
+
+* Utilizar el sistema: saber qué estímulos tiene que darle para obtener un comportamiento deseado. En este caso normalmente interesa disponer de un modelo funcional, pero (como pone de manifiesto el último ejemplo) a veces resulta más útil un modelo procesal.
+
+* Diseñar, rediseñar, implementar, reparar o mantener el sistema. En estas actividades suele dominar el uso del modelos estructurales y procesales.
+
+* Simplemente, comprender el sistema. La motivación puede ser un puro interés científico, o un paso previo para alguna de las actividades anteriormente enunciadas. Por ejemplo, en este libro presentamos modelos pensados para que el lector comprenda los ordenadores. El objetivo final es que el lector se convierta en (o perfeccciones sus habilidades como ) usuario y/o diseñador de ordenadores o de sistemas construidos con él (así lo esperamos). Para una compresión cabal del sistema hay que estudiar modelos funcionales, estructurales y procesales.
+
+### Artefactos y herramientas
+
+Un ordenador es un *artefacto*: algo *hecho con arte*. El diseño de ordenadores tiene, en efecto, mucho de "artístico". Al mismo tiempo un ordenador es una *herramienta*: un objeto que ayuda en la resolución de problemas (entre los cuales se encuentra el diseño de artefactos, ordenadores incluidos).
+
+En general, un **artefacto** es un sistema material o conceptural concebido y construido por el hombre, y una **herramienta** es un artefacto que tiene un fin específico: el de usarlo como ayuda para la resolución de ciertos problemas. Un automóvil y un edificio son (como el ordenador) artefactos y herramientas, y también lo son, aunque se trate de sistemas conceptuales, la lógica y las teorías matemáticas. Las obras de arte son artefactos, pero normalmente, no son herramientas. Todas las herramientas son artefactos (excluimos las "herramientas primitivas" que se encuentran en la naturaleza). Los sistemas naturales no son artefactos, y, por tanto, tampoco herramientas (aunque a veces se usen como si lo fueran).
+
+Las intenciones y las motivaciones de las personas que tratan con un mismo artefacto (y, en general, con un mismo sistema) pueden ser muy variadas. De ahí que el mismo sistema pueda verse de muchas maneras diferentes, o, lo que es lo mismo, que puedan formularse diferentes tipos de modelos en diferentes niveles de abstracción.
+
+### Adecuación de las descripciones
+
+Ya sabemos que toda descripción de un sistema es un modelo del mismo. Diferentes observadores, contemplando la misma realidad, pueden elaborar o encontrar útiles descripciones muy diferentes para esa realidad. Ello no implica necesariamente que unas descripciones se ajusten más o menos que otras a la realidad. La mejor descripción para una determinada persona no es la más detallada, sino la que mejor le permite resolver los problemas que se plantea.
+
+Consideremos un sistema natural particularmente complejo: el hombre. Si se nos pide una descripción de una persona determinada seguramente daremos una relación de sus rasgos fisionómicos más destacados, es decir, un modelo estático y de "caja negra" (funcional). Para más detalles, trataríamos de describir su "personalidad", que incluye rasgos de comportamiento dinámico, y al hacerlo formularíamos de manera informal e incompleta algún modelo procesal ("le gusta tal cosa, le enfada tal otra..."). Pero el hombre, como sistema, es objeto de estudio de diferentes ciencias, y en cada una de ellas se han elaborado distintos modelos. La psicología conductista, por ejemplo, utiliza sobre todo modelos funcionales con los que estudia las respuestas humanas ante los estímulos, mientras que la psicología cognoscitiva trata con modelos de representación del conociemiento en la mente humana (modelos estructurales) y de procesamiento de la información (modelos procesales). En medicina se utilizan modelos estructurales estáticos (anatomía) y funcionales y procesales dinámicos (fisiología). Para un sociólogo, el hombre es un componente de los sistemas sociales, caracterizado por ciertos rasgos de comportamiento (por tanto, por algún modelo funcional), y para un ingeniero puede ser el objeto último de su profesión (considerando que el objetivo de la ingeniería es la producción de artefactos que redunden en la mejora de la calidad de vida), un objeto inmediato (diseño ergonómico de interfaces hombre-máquina), o, incluso, una fuente inspiradora de modelos (en la línea de lo que algunos llaman "biónica"). En cada caso, el criterio para elegir una descripción (un modelo) y descartar otras depende, sobre todo, de la adecuación de esa descripción al tipo de problemas que se pretende abordar con ella.
+
+Como ejemplo de artefacto (y herramienta) tomemos el automóvil. Para el usuario normal el automóvil es una herramienta, y su mejor descripción es un modelo funcional: le basta con saber cómo responde el vehículo ante los "estímulos" de girar el volante, pisar el freno, etc. Algunos usuarios especiales, como los pilotos de pruebas, pueden requerir modelos funcionales más detallados. [^26] Pero para los profesionales de la industria del automóvil éste no es ya una herramienta, sino el objeto central de su trabajo; en general, no les bastan los modelos funcionales, y tienen que disponer de modelos estructurales y procesales, diferentes para cada especialidad.
+
+Los modelos para la comprensión son generalmente conceptuales, más o menos formalizados, aunque en ocasiones la comprensión se facilita mediante un modelo analógico (por ejemplo, cuando se explican los rudimentos de la electricidad mediante un "símil hidrodinámico"). Los típicos modelos para uso son los "manuales de usuario"; generalmente se trata de descripciones informales, pero como veremos enseguida el usuario del sistema puede ser un diseñador de otro sistema (de "nivel superior"), y en tal caso se hacen necesarios modelos formalizados.
+
+### La actividad de diseño
+
+
+
+
+
+
 🚧 TODO 🚧
 
 
@@ -375,3 +408,5 @@ El lector puede observar en el diagrama otras soluciones (con secuencias de est�
 [^24]: W.R. Ashby, *op.cit.*
 
 [^25]: Obsérvese que aquí, a diferencia del caso del sumador, podemos asociar la salida a los estados, no a las transiciones: $s=0$ está asociada a $q_0$, y $s=1$ a los otros tres; la función de salida es $g(q)$, no $g(e,q)$.
+
+[^26]: Es bien sabido que todos los usuarios pueden, en ocasiones, beneficiarse del conocimiento de modelos estructurales y procesales. Pero cuando un usuario recurre a uno de estos modelos es por una de dos razones: o bien porque su modelo funcional no es  suficiente para resolver todos sus problemas, o bien porque deja de ser estrictamente un usuario (como ocurre cuando el conductor abre el capó).
