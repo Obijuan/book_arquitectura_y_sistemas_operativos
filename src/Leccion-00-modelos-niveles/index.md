@@ -391,6 +391,9 @@ La sucesión de fases por las que pasa un producto desde su concepción hasta su
 
 ## 0.6 Jerarquías de abstracciones
 
+Un ordenador es un *sistema complejo* que puede describirse mediante diferentes *modelos, en distintos *niveles* de una *jerarquía de abstracciones*. Esta era nuestra declaración inicial, y el objetivo de esta lección es profundizar en su significado y en sus consecuencias. Ya hemos hablado de "sistemas", "complejidad" y "modelos", hemos visto tres tipos básicos de modelos conceptuales para sistemas dinámicos (funcionales, estructurales y procesales), hemos explicado que las descripciones son modelos y que a un mismo sistema pueden aplicársele descripciones diferentes por consideraciones pragmáticas. Aclaremos ahora lo que pretendemos significar con "niveles" y "jerarquía de abstracciones". En general en este apartado, y particularizando para los ordenadores en el siguiente.
+
+### Modelos y abstracciones
 
 🚧 TODO 🚧
 
