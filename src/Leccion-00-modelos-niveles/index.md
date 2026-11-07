@@ -418,6 +418,30 @@ Entre estos niveles existe una relación de orden: los componentes de los modelo
 
 ## 0.7 Jerarquía de niveles para los ordenadores
 
+![Figura 0.22. Niveles de descripciones para los ordenadores.](fig-0_22-Niveles_de_descripciones_para_los_ordenadores.svg)
+
+La figura 0.22 presenta los siete niveles de la jerarquía que vamos a considerar para situar en ella a las descripciones de los ordenadores. Antes de pasar a comentarlos, haremos dos precisiones:
+
+* Salvo alusiones esporádicas, tanto aquí como en el resto del libro nos limitaremos a aquellas partes de los ordenadores que tienen un soporte tecnológico electrónico, eludiendo todo lo concerniente a tecnologías mecánica, magnética y óptica utilizadas en terminales y memorias, que precisarían de otras jerarquías de descripción.
+
+* En esta jerarquía se hace referencia a modelos que son precisisamente el objeto de estudio de este curso. Por tanto, no se puede pretender que sea comprensible en una primera lectura. Este apartado debería ser objeto de repaso recurrente tras el estudio de cada una de las partes del libro.
+
+El nivel más bajo (el de menor abstracción) es el de **dispositivos**. En él se estudian los sistemas electrónicos básicos (transistores, resistores, condensadores, etc.) que son componentes del siguiente nivel. En este nivel, los componentes son los materiales semiconductores, y el lengujae para expresar las interrelaciones y los procesos es el de la física del estado sólido. (Aquí, si hubiéramos de incluir los detalles no electrónicos a que nos referíamos en el párrafo anterior, consideraríamos otros componentes, como soportes magnéticos, ópticos y mecánicos).
+
+Los componentes del nivel de **circuito electrónico** son los sistemas del anterior, es decir, lo que en la terminología de la electrónica se llaman, justamente, "componentes" (discretos): resistores, transistores, etc. Se utilizan aquí lenguajes gráficos para indicar las interrelaciones o conexiones entre los componentes, y para expresar el comportamiento de estos componentes y de las estructuras (curvas voltaje-corriente, cronogramas de las evoluciones de las variables, etc.), así como el lenguaje del álgebra para expresar las leyes de la electricidad.
+
+En el nivel de **circuito lógico** se abstrae la estructura de ciertos sistemas construidos en el nivel anterior: las *puertas lógicas*. Además, y paralelamente, se abstrae también la naturaleza física de las variables: ya no se trabaja con valores de voltaje o de corriente, expresados en voltios o amperios, sino con *niveles lógicos*. Este nivel puede descomponerse en dos subniveles: el de *circuito combinacional* y el de *circuito secuencial*. En efecto, para el diseño de circuitos secuenciales se toman como componentes sistemas combinacionales, como los biestablaes, diseñados con puertas. El lenguaje predominante en este nivel es el del *álgebra de Boole*. El nivel de circuito lógico no forma parte del contenido de este curso, pero los conceptos más importantes se presentan en el apéndice B.
+
+Los anteriores niveles no son exclusivos de la descripción de ordenadores: son muchos los artefactos electrónicos digitales diseñados en el nivel de circuito lógico que no son programables o que, aun siéndolo, no son de propósito general (características ambas que son esenciales de los ordenadores). En tales sistemas es obvio que no tiene sentido *abstraer* por encima del nivel de circuito lógico.
+
+El siguiente nivel es ya característico de los ordenadores: el nivel de **micromáquina**. Sus componentes son registros (elementos en los que se puede registrar y recuperar una información binaria de longitud fija), operadores aritméticos y lógicos (que permiten transformar una información o combinar varias para dar un resultado predeterminado), unidades de memoria (que almacenan un conjunto de informaciones), secuenciadores (que generan señales secuenciadas en el tiempo para gobernar a otros componentes) y otros circuitos combinacionales y secuenciales considerados como cajas negras, así como los buses, que permiten interconectar a los elementos. Un componente central en este nivel es la **memoria de control**, que almacena **microinstrucciones**. Los modelos procesales describen las secuencias en el tiempo de transferencias de conjuntos de bits entre registros y memorias; estas transferencias están determinadas por las microinstrucciones almacenadas en la memoria de control. Los modelos funcionales describen las microinstrucciones que acepta la micromáquina y sus efectos.
+
+En el **nivel de máquina convencional** (o, simplemente, **nivel de máquina) el modelo funcional de un ordenador está compuesto por seu *repertorio de instrucciones* y los convenios de *representación de la información*. Tanto las instrucciones como las otras informaciones se expresan en binario (cadenas de ceros y unos), que es el lenguaje predominante en este nivel. En los modelos estructurales se abstrae el hecho de que exista una memoria de control con microinstrucciones; se considera integrada en un componente, la *unidad central de procesamiento*, que en el nivel de micromáquina se descompone en circuitos aritméticos, memorias de control, etc. Combinando instrucciones (es decir, programando) se construyen sistemas de niveles superiores.
+
+
+
+
+
 🚧 TODO 🚧
 
 
