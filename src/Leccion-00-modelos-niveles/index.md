@@ -451,7 +451,21 @@ La existencia de estos niveles está condicionada por las tecnologías disponibl
 
 ## 0.8 Estructura y contenido del libro
 
+Este libro se centra en los niveles superiores al de circuito lógico. La Primera Parte se dedica al nivel de máquina convencional, la Segunda al de micromáquina y la Tercera al de máquina operativa, con algunos ingredientes del nivel de máquina simbólica.
 
+Se añaden tres apéndices. El primero resume algunos elementos sobre codificación, sistemas de numeración y aritmética binaria, necesarios para la lección 4. El segundo recoge los conceptos imprescindibles (que se utilizan en la Segunda Parte) sobre el nivel de circuito lógico. Y en el tercero se presentan alfabéticamente, para facilidad de referencia, las traducciones de términos ingleses comentadas en los apartados de "Observaciones terminológicas".
+
+Cada Parte consta de ocho lecciones en las que se desarrollan modelos funcionales, estructurales y procesales en el nivel correspondiente. Estos modelos se particularizan dando lugar a una gran diversidad de detalles cuando se aplican a ordenadores reales. Nuestro enfoque es conceptual: se trata de formar conceptos básicos y generales que el lector pueda posteriormente aplicar a diferentes máquinas concretas con las que tenga que trabajar. Por eso, no describimos ningún ordenador real (salvo algunos detalles, en algunos de los ejercicios).
+
+Ahora bien, los conceptos y los modelos generales sólo se asientan bien mentalmente si se concretan con estudios de casos. Definiremos para esto máquinas ficticias especialmente pensadas para concentrarse en lo esencial y no perderse en los detalles de las máquinas reales. Con "Símplez", la más elemental, introduciremos lo más básico. "Algoritmez", algo más elaborada, nos permitirá presentar la mayoría de las características que se encuentran en la realidad, en el nivel de máquina convencional y en el de micromáquina; asimismo, se utilizará, en la Tercera Parte, para entrar en el nivel de máquina operativa. Finalmente, "Regístrez" incluye ya prácticamente todos los mecanismos que en la actualidad se incluyen en los ordenadores, tanto en el nivel de máquina convencional como en el de micromáquina.
+
+En cada Parte se encuentran dos tipos de lecciones: las que se apoyan en las máquinas ficticias para introducir conceptos o para concretarlos, y las que presentan modelos más generales y variaciones, generalizando los detalles de las otras lecciones. Así, en las dos primeras Partes se empieza con el caso concreto de Símplez, luego se generaliza y finalmente se vuelven a concretar algunos detalles con Algorítmez y Regístrez. La Tercera Parte comienza con tres lecciones generales a las que siguen otras tres en las que se desarrollan modelos de sistemas operativos para Algorítmez, y termina con dos lecciones de carácter general.
+
+Las lecciones están secuenciadas, como es habitual, para un estudio lineal del libro. Pero existen múltiples maneras alternativas de recorrerlo, dependiendo de los intereses del lector y de sus conocimientos previos. La figura 0.23, en la que se han resumido las dependencias más importantes entre las lecciones, puede servir de orientación, junto con la Tabla de materias, para establecer posibles trayectorias. Las flechas de trazo continuo indican dependencias "fuertes", en el sentido de que la lección en la que entra una de estas flechas es muy dependiente de lo tratado en aquella de la que procede. Las de puntos son "débiles": la lección puede asimilarse sin necesidad de haber estudiado la precedente, si bien habrá que acudir a ella en algunos momentos (estas referencias puntuales se explicitan en el texto de cada lección, en los lugares oportunos).
+
+También es posible, si se dispone de conocimientos previos, empezar el estudio en lugares intermedios. Los "conocimientos básicos" a los que alude la figura 0.23 se refieren a:
+
+* En los niveles de máquina operativa
 
 
 
