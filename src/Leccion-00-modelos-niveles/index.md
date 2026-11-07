@@ -438,6 +438,19 @@ El siguiente nivel es ya característico de los ordenadores: el nivel de **micro
 
 En el **nivel de máquina convencional** (o, simplemente, **nivel de máquina) el modelo funcional de un ordenador está compuesto por seu *repertorio de instrucciones* y los convenios de *representación de la información*. Tanto las instrucciones como las otras informaciones se expresan en binario (cadenas de ceros y unos), que es el lenguaje predominante en este nivel. En los modelos estructurales se abstrae el hecho de que exista una memoria de control con microinstrucciones; se considera integrada en un componente, la *unidad central de procesamiento*, que en el nivel de micromáquina se descompone en circuitos aritméticos, memorias de control, etc. Combinando instrucciones (es decir, programando) se construyen sistemas de niveles superiores.
 
+El **nivel de máquina operativa** (que corresponde a un ordenador acompañado de un "sistema operativo") surge como necesidad de "arropar" al "ordenador desnudo" (máquina convencional) con programas de uso general que lo hagan más fácil de utilizar y que optimicen su funcionamiento. El modelo funcional de un ordenador en este nivel incluye al modelo funciona del nivel de máquina y lo amplía con "instrucciones virtuales" (esencialmente, *llamadas al sistema operativo*). Este nivel y el siguiente son ya niveles de *máquinas virtuales*, en el sentido de que la funcionalidad del sistema se obtiene mediante una combinación de hardware y software.
+
+Si sólo dispusiéramos de los niveles anteriores la programación de los ordenadores sería una ardua tarea debido al lenguaje binario. Por esta razón se inventaron los *procesadores de lenguajes* (los clásicos intérpretes y compiladores de lenguajes de programación, y también los programas que materializan a las *interfaces de usuario*), con los que apareción un nuevo nivel: el de **máquina simbólica*.
+
+Como todo modelo, la jerarquía es una aproximación a la realidad. Y como un modelo que pretende ser un marco general para modelos concretos de ordenadores su aplicación a esos casos concretos presenta excepciones. Las más notables se dan en la abstracción del nivel de circuito lógico al de máquina convencional. Según la figura 0.22, hay un nivel entre ambos, el de micromáquina. Pero, como veremos en la Segunda Parte,
+
+* a veces este nivel no existe: los sistemas del nivel de máquina convencional se pueden implementar directamente con componentes que son sistemas del nivel de circuito lógico (apartado 9.1), y 
+* a veces existe otro nivel adicional (el de "nanomáquina") entre el de micromáquina y el de circuito lógico (apartado 12.2).
+
+La existencia de estos niveles está condicionada por las tecnologías disponibles en cada momento (en definitiva, por el nivel de dispositivo, que irradia su influencia "hacia arriba").
+
+## 0.8 Estructura y contenido del libro
+
 
 
 
