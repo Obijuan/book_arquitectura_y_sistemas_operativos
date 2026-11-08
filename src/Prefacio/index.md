@@ -14,10 +14,14 @@ Independientemente de la clasificación implícita en el párrafo anterior (alum
 * Profesionales en proceso de "reconversión" a las tecnologías de la información y las comunicaciones.
 * Profesionales o estudiantes de otras materias en las que el ordenador se utiliza como una herramienta cuya organización, estructura y funcionamiento internos es conveniente conocer para obtener de ella el máximo provecho.
 
-Como requisito previo, se supone que el lector tiene unos conocimientos mínimos de programación. No es necesario que sepa diseñar programas en ningún lengujae determinado, pero sí que sea capaz de entender algoritmos sencillos escritos en un lenguaje de alto nivel. Algunas de las lecciones requiren también ciertas nociones de codificación y aritmética binario, así como de circuitos lógicos; sobre estos dos temas, se incluyen sendos apéndices con todo lo que hace falta saber para la comprensión del libro.
+
+Como requisito previo, se supone que el lector tiene unos conocimientos mínimos de programación. No es necesario que sepa diseñar programas en ningún lenguaje determinado, pero sí que sea capaz de entender algoritmos sencillos escritos en un lenguaje de alto nivel. Algunas de las lecciones requiren también ciertas nociones de codificación y aritmética binaria, así como de circuitos lógicos; sobre estos dos temas, se incluyen sendos apéndices con todo lo que hace falta saber para la comprensión del libro.
 
 
 ## Temática
+
+🚧 DEBUG 🚧
+
 
 El objeto de estudio aquí es el **ordenador**, no la informática. Es decir, el instrumento, no la ciencia construida a su alrededor.[^3]
 
@@ -96,7 +100,7 @@ Gregorio Fernández
 
 
 
-[^1]: "**Iniciar** [...] **3.** fig. Instruir en cosas abstractas o muy frofundas". "**Concretar**[...] **3.** Reducir a lo más esencial y seguro la materia sobre la que se habla o escribe". (Diccionario de la Real Academia Española).
+[^1]: "**Iniciar** [...] **3.** fig. Instruir en cosas abstractas o muy profundas". "**Concretar**[...] **3.** Reducir a lo más esencial y seguro la materia sobre la que se habla o escribe". (Diccionario de la Real Academia Española).
 
 [^2]: De hecho, este libro es una refundición de otros tres del mismo autor, de difusión restringida, dirigidos a distintos tipos de lectores: *Fundamentos de los ordenadores*, Servicio de Publicaciones de la E.T.S.I. Telecomunicación, Madrid, 1991 (vol.1) y 1992 (vol.2), *Iniciación concreta a los sistemas operativos*, Servicio de Publicaciones de la E.T.S.I. Telecomunicación, Madrid, 1993, y *Arquitectura de ordenadores* (dos volúmenes), Escuela de Organización Industrial, Madrid, 1993
 
