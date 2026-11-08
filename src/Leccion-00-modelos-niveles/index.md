@@ -530,13 +530,33 @@ A lo largo del curso, en estos apartados, iremos dando numerosas referencias. Co
 
 Si el lector se entretiene en escudriñar las fuentes que aparecen en "Referencias" observará la abundancia de artículos publicados en revistas del I.E.E.E. (*Institute of Electrical and Electronics Engineers*) (y, particularmente, una de ellas, "*Computer*"). El lector puede obtener información sobre cómo solicitar la admisión como miembro, y cómo suscribirse a esas revistas (con cuotas muy reducidas para estudiantes), en las "Secciones" nacionales (la española tiene su sede en la E.T.S.I. Telecomunicación de la Universidad Politécnica de Cataluña, apartado 30002, 08080 Barcelona), o en las oficinas dentrales del I.E.E.E. (IEEE Service Center, 445 Hoes Lane, P.O. Box 1331. Piscataway, N.J. 08855-1331, U.S.A) o de la "Computer Society" (Computer Society Publicactions Office 10662, Los Vaqueros Cir., P.O. Box 3014, los Alamitos, CA 90720-1264, U.S.A.). También puede considerar su afiliación a la A.C.M. (*Association for the Computing Machinery*), que publica asimismo revistas de gran calidad y prestigio (ACM, 1515 Broadway, New York, N.Y. 10036, U.S.A). Existe un "Capítulo de estudiantes de ACM de la Universidad Politécnica de Madrid" con sede en la Facultad de Informática (Campus de Montegancedo, 28660 Boadilla del Monte).
 
+## 0.13 Ejercicios 
 
+Todas las lecciones terminan con un apartado que tiene este título. "Ejercicio" debe entenderse en un sentido amplio. Algunos son problemas bien definidos, con una o varias soluciones concretas, pero otros son invitaciones al lector para *ejercitar* su capacidad creativa y comprobar que ha asimilado (hecho suyo) el contenido de la lección (y pueden no tener "soluciones" en el sentido de un "problema" clásico de libro de texto). De los que siguen, el 3 y el 4 pertenecen al primer tipo, y los demás al segundo.
 
+1. La figura 0.23 es un modelo de este libro. ¿De qué tipo? Identifique sus aspectos sintácticos, semánticos, y pragmáticos.
+
+2. En el apartado 0.3 se sugería que el "programa principal" de la figura 0.8(c) podría modificarse automáticamente para que el sistema mejorase su comportamiento, y, de este modo, "aprender". Trate el lector de extraer sus propias conclusiones, teniendo en cuenta conocimientos básicos de la psicología: refuerzo (premio y castigo), representación del conocimiento, etc., y de extrapolar (por ejemplo, ¿cuándo podría decirse que el sistema "comprende"?).
+
+3. Mi perro tiene un carácter de ordinario apacible. Normalmente está tranquilo, y en cualquier caso puede devolvérsele a ese estado ofreciéndole un hueso. Si huele a un desconocido, ladra y se pone nervioso. Si se intenta quitarle un hueso gruñe y se irrita. Si yo le regaño se queda tranquilo, pero si es un desconocido se pone nervioso e irritado. Cuando está nervioso e irritado, muerde. He llegado a la conclusión de que se puede prever su comportamiento con un modelo procesal que tiene en cuenta cinco esntradas, cuatro estados y tres salidas. ¿Qué modelo es ése?
+
+4. Un *detector de paridad* es un sistema digital con una entrada y una salida, ambas binarias. El valor de la salida debe ser "0" si el número total de "1" que se han introducido a la entrada, desde que comenzó a funcionar, es par (o ninguno), y "1" si es impar. Obtenga un modelo procesal de este sistema expresado en las mismas formas que el de la figura 0.16.
+
+5. Identifique, en cada uno de los niveles de la figura 0.22, los elementos característicos de cada nivel de abstracción enunciados en el apartado 0.6.
+
+6. Según algunos oráculos (no carentes de fundamento) una tecnología basada en moléculas orgánicas podría sustituir a la actual de los semiconductores. Especule sobre la validez, tras esta eventual mutación tecnológica, de la jerarquía de la figura 0.22.
+
+## 0.14 Solución a los ejercicios
+
+> [!NOTE]
+> Este apartado no forma parte del libro original. Ha sido añadido por Obijuan[^35]
+
+Estas son mis soluciones a los ejercicios propuestos en el libro
 
 🚧 TODO 🚧
 
 
------------
+
 
 [^1]: Obsérvese que este enunciado no es una definición de ordenador, sino la declaración de unas propiedades del mismo. Dicho de otro modo, en él se utiliza el verbo "ser" en el sentido de la *predicación*, no en el de la *identidad*. (J. Ferrater h H. Leblanc: *Lógica matemática*. Fondo de Cultura Económica, México, 1962).
 
@@ -605,3 +625,5 @@ Si el lector se entretiene en escudriñar las fuentes que aparecen en "Referenci
 [^33]: También hemos de advertir que la edición restringida de este último hace que sea difícil conseguirlo. Esperamos que su autor se decida pronto a hacer una reedición de mayor alcance.
 
 [^34]: Respetando el deseo de los autores, iremos alternando sus nombres en las referencias sucesivas a éste y a su segundo libro.
+
+[^35]: Juán González Gómez, más conocido en el mundo friki como *Obijuan*: https://obijuan.github.io/
