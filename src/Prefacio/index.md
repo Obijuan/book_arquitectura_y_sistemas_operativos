@@ -44,8 +44,6 @@ Para su uso como "libro de texto", los conceptos incluidos en cada lección pued
 
 ## Ensambladores y simuladores
 
-🚧 DEBUG 🚧
-
 Como complemento, están disponibles unos programas (para MS-DOS) que permiten practicar, y afianzar así los conceptos explicados en el texto. Se trata de ensambladores y simuladores de Símplez y Algorítmez. En lugar del procedimiento tradicional de incluir un disquete con el libro (que complica los procesos editoriales, repercute en el precio, y , sobre todo, dificulta la actualización de versiones) hemos preferido dejarlos accesibles por "ftp" a través de Internet. El procedimiento para obtenerlos es:[^5]
 
 1. Conéctese al servidor:  
@@ -72,11 +70,13 @@ Como complemento, están disponibles unos programas (para MS-DOS) que permiten p
 
     ```% tar -xvf simalg.tar```
 
-9. Lea el fichero "`leeeme`"
-
+9. Lea el fichero "`leeme`"
 
 
 ## Agradecimientos
+
+🚧 DEBUG 🚧
+
 
 El autor ha ido adquiriendo los conocimientos que trata de compartir aquí a lo largo de más de veinte años de actividad docente e investigadora en la Escuela Técnica Superior de Ingenieros de Telecomunicación de la Universidad Politécnica de Madrid. No es posible mencionar a todas las personas que, de algún modo, han contribuido en esta formación y maduración personal. Pero el riesgo de olvidar a muchos no justificaría el dejar de destacar a algunos.
 
