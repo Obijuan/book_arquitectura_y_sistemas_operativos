@@ -492,6 +492,20 @@ Una vez fijado este marco conceptual, que en esta lección 0 hemos ilustrado con
 
 Terminamos con una reflexión acerca de la secuencia de estudio de los modelos en distintos niveles. Podría pensarse en recorrer la jerarquía en sentido ascendente o descendente, indiferentemente. En efecto, en principio cada nivel debería poder estudiarse independientemente de los demás: basta con conocer los modelos funcionales del nivel inmediatamente inferior. Aquí, sin embargo, empezamos en el nivel de máquina convencional, luego "descendemos" al de micromáquina y finalmente "nos elevamos" a los de máquina operativa y máquina simbólica. Las "flechas" de la figura 0.23 justifican esta trayectoria, y detrás de ellas hay una explicación. Existen unos modelos (funcional, estructural y procesal) en el nivel de máquina convencional, los que conforman la llamada "máquina" o "arquitectura de von Neumann", cuya fuerza es tal que *determinan* de manera fundamental la mayoría de los modelos en los otros niveles.
 
+## 0.10 Observaciones terminológicas
+
+La denominación "ordenador" es rechazada por muchos autores de lengua castellana, que prefieren "computador" o "computadora". Este es, además, el término utilizado habitualmente en los paises americanos de habla española. "Ordenador" tiene origen francés ("ordinateur"): lo introdujo Jacques Perret con motivo de la presentación en Europa del IBM 701. [^29] Según Edgar Morin, "[...] el término francés '*ordenateur*'—que expresa tanto la emisión de órdenes como la puesta en orden— completa el término anglosajón '*computer*', que expresa el tratamiento de la información. Se trata de un *aparato de mando*".[^30] Podemos añadir que "computador" evoca las aplicaciones exclusivamente numéricas para las que se diseñaron los primeros ordenadores, mientras que actualmente (y más en el futuro) la mayor parte del procesamiento que se realiza con ordenadores es de naturaleza simbólica.
+
+Hemos procurado buscar las traducciones más idóneas para los términos técnicos. Entre las excepciones (palabras que dejamos en inglés para no perturbar la comprensión) están "hardware" (para el conjunto de componentes físicos que constituyen el ordenador) y "software" (para los programas), que son los únicos utilizados en el mundo profesional y hasta en la cultura popular. Se han propuesto traducciones, como "material" y "logical" (influidas por sus homólogas francesas, "materiel" y "logiciel"), "soporte físico" y "soporte lógico", pero su aceptación ha sido escasa (a pesar de la admirable insistencia en el apoyo de estas últimas por parte de un conocido medio de comunicación).
+
+La Real Academia Española admite ya "implementar" (aunque no, explícitamente "implementación). Como hemos podido ver en esta lección, el término adquiere un significado muy claro en el contexto de la jerarquía de niveles de abstracción: en cada nivel, implementar es concretar estructuralmente, mediante componentes del nivel inferior, un sistema descrito funcionalmente. En el campo de los ordenadores el término se refería originalmente al nivel de máquina convencional (véase el apartado 12.6), pero ahora se utiliza también para los niveles superiores.
+
+"Procesal" no es un adjetivo que se utilice habitualmente en el campo de los ordenadores, donde generalmente se habla de "descripción del comportamiento" o de "funcionamiento" para referise a lo que nosotros llamamos "modelo procesal". La adecuación del término al concepto parece clara: "procesal" es "perteneciente o relativo al proceso".
+
+Algunos de los nombres de los niveles de máquinas requieren comentario. "Nivel de máquina convencional" es una expresión introducida por Tanenbaum en un texto clásico que referenciamos más adelante. El prefijo "micro" en el "nivel de micromáquina" ("nivel de microprogramación", según Tanenbaum) sólo se refiere a un mayor grado de resolución, o de detalle, que el propio del nivel de máquina convencional; es decir, no guarda relación alguna con el tamaño físico de la máquina (apartado 9.1). El "nivel de máquina operativa" es el que corresponde a una máquina acompañada de unos programas que constituyen lo que se llama un "sistema operativo". Cabe discutir si "sistema operativo" es una traducción acertada de *operating system*[^31], pero es la utilizada por todos los hispanohablantes (y consagrada por la R.A.E). Finalmente, el "nivel de máquina simbólica" implica que la máquina *procesa símbolos*[^32] o, lo que es igual, el lenguaje que corresponde a la máquina está definido sobre un alfabeto de símbolos más rico que "{0,1} (véase el apartado 19.5).
+
+
+
 🚧 TODO 🚧
 
 
@@ -552,3 +566,12 @@ Terminamos con una reflexión acerca de la secuencia de estudio de los modelos e
 [^27]: Un biestable, como se explica en el apéndice B.
 
 [^28]: O bien lo encontramos pero a un coste prohibitivo. El criterio de coste, aquí omitido, forma parte importante de las especificaciones iniciales del diseño.
+
+[^29]: G. Elgozy: "Origins de l'informatique". En *Traité Pratique d'Informatique*, H260. Techniques de l'ingénieur, París, 1970.
+
+[^30]: E. Morin: *La Méthode I. La Nature de la Nature*. Editions du Seuil, París, 1977. Traducción de Ana Sánchez: *El Método I. La naturaleza de la Naturaleza*. Ediciones Cátedra, Madrid, 1981.
+
+[^31]: A "operativo" ("dícese de lo que obra y hace su efecto") le corresponde un inglés "operative". El verbo "operate" debería traducirse por "hacer funcionar" o "explotar". Hace años se decía "sistema de explotación"; su equivalente en francés se ha conservado en los países francófonos.
+
+[^32]: A. Newell y H. Simon: "Computer science as sciencitif inquiry: symbols and search". *Communications of the ACM*, 19, 3 (Mar. 1976), pp. 113-126.
+
