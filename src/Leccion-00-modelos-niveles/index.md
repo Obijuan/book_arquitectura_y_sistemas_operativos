@@ -486,6 +486,12 @@ Como ejemplos de adaptación del material a diferentes necesidades, nosotros lo 
 
 ## 0.9 Resumen
 
+Los ordenadores son *sistemas complejos* que pueden estudiarse, diseñarse o utilizarse desde distintos puntos de vista. Estos puntos de vista pueden situarse en una jerarquía de  *niveles de abstracción*. Los niveles de esta jerarquía aparecen en la figura 0.22. Y dentro de cada nivel se puede describir la función (mediante un *modelo funcional), la estructura (mediante un *modelo estructural*) o el funcionamiento (mediante un *modelo procesal*).
+
+Una vez fijado este marco conceptual, que en esta lección 0 hemos ilustrado con ejemplos, se puede situar en él el contenido del libro. Es lo que se resume en la figura 0.23, en la que aparecen señaladas con flechas las relaciones de dependencia entre las lecciones.
+
+Terminamos con una reflexión acerca de la secuencia de estudio de los modelos en distintos niveles. Podría pensarse en recorrer la jerarquía en sentido ascendente o descendente, indiferentemente. En efecto, en principio cada nivel debería poder estudiarse independientemente de los demás: basta con conocer los modelos funcionales del nivel inmediatamente inferior. Aquí, sin embargo, empezamos en el nivel de máquina convencional, luego "descendemos" al de micromáquina y finalmente "nos elevamos" a los de máquina operativa y máquina simbólica. Las "flechas" de la figura 0.23 justifican esta trayectoria, y detrás de ellas hay una explicación. Existen unos modelos (funcional, estructural y procesal) en el nivel de máquina convencional, los que conforman la llamada "máquina" o "arquitectura de von Neumann", cuya fuerza es tal que *determinan* de manera fundamental la mayoría de los modelos en los otros niveles.
+
 🚧 TODO 🚧
 
 
