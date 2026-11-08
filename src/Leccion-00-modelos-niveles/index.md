@@ -504,6 +504,33 @@ La Real Academia Española admite ya "implementar" (aunque no, explícitamente "
 
 Algunos de los nombres de los niveles de máquinas requieren comentario. "Nivel de máquina convencional" es una expresión introducida por Tanenbaum en un texto clásico que referenciamos más adelante. El prefijo "micro" en el "nivel de micromáquina" ("nivel de microprogramación", según Tanenbaum) sólo se refiere a un mayor grado de resolución, o de detalle, que el propio del nivel de máquina convencional; es decir, no guarda relación alguna con el tamaño físico de la máquina (apartado 9.1). El "nivel de máquina operativa" es el que corresponde a una máquina acompañada de unos programas que constituyen lo que se llama un "sistema operativo". Cabe discutir si "sistema operativo" es una traducción acertada de *operating system*[^31], pero es la utilizada por todos los hispanohablantes (y consagrada por la R.A.E). Finalmente, el "nivel de máquina simbólica" implica que la máquina *procesa símbolos*[^32] o, lo que es igual, el lenguaje que corresponde a la máquina está definido sobre un alfabeto de símbolos más rico que "{0,1} (véase el apartado 19.5).
 
+## 0.12 Orientaciones bibliográficas
+
+En lo sucesivo referiremos las fuentes mediante el convenio de dar el nombre de autor y el año. Los datos completos, ordenador alfabéticamente por autores, aparecen en "Referencias", al final del libro.
+
+El "enforque sistémico" y las "teorías generales de sistemas" tienen una larga tradición y una extensa bibliografía, por lo que nos limitaremos a remitir al lector que pueda estar interesado a un buen libro introductorio, como es el de Javier Aracil Santonja (1986) y a recomendarle el de Fernando Sáez Vacas (1992), que trata, con rigor y originalidad, de la complejidad en las tecnologías de la información.[^33]
+
+Jerarquías de niveles de abstraciión para sistemas complejos se elaboran, por ejemplo, en Miller (1987) (para sistemas biológicos y sociales) y en Sáez (1990) (para sistemas ofimáticos).
+
+Ya en el campo de la descripción de ordenadores, las jerarquías de niveles más conocidas son la de Bell y Newell (Siewiorek *et al*, 1982) y la de Tanenbaum (1990). La que aquí hemos presentado es una síntesis de ambas, en el sentido de que pretende fusionar la orientación estructural de la primera con el énfasis funcional de la segunda, y evidencia estoas puntos de vista con el uso de modelos. Una importante aportación conceptual en estas jerarquías (que aquí no hemos explicado) es la de Newell (1982), que propone un nuevo nivel de abstracción por encima del de máquina simbólica: el *nivel de conocimiento*. En él se enmarcarían los trabajos sobre "inteligencia artificial" e "ingeniería del conocimiento". Para aportaciones posteriores sobre este nuevo nivel, en relación también con el aprendizaje, son muy interesantes los artículos de Dietterich (1986) y Clancery (1989).
+
+Hay muchos libros sobre organización, estructura o arquitectura de ordenadores. Pero son escasos los que adoptan una visión generalista e intentan destilar conceptos básicos e independientes de la tecnología, como hemos tratado de hacer en esta lección. Recomendamos al lector que quiera profundizar en esta dirección el libro de Bertrán *et al*. (1983)
+
+A lo largo del curso, en estos apartados, iremos dando numerosas referencias. Con carácter general, remitimos a los siguientes textos para ampliar conocimientos:
+
+* El libro de Tanenbaum (1990), también estructurado por niveles, cubre los mismos temas que éste (de manera más concisa) e incluye como ejemplos descripciones de las "familias" de microprocesadores 80x86 y 680x0.
+
+* El de Patterson y Hennessy (1990)[^34] es mucho más avanzado. Es, según una opinión bastante general que compartimos, el mejor libro publicado sobre arquitectura de ordenadores en el sentido "clásico" (niveles de máquina convencional y micromáquina, y medidas de prestaciones). Pero para abordar su estudio se requiere previamente el de un libro más básico (como éste).
+
+* El de Hennesy y Patterson (1994) es una versión "suavizada" del anterior. Los autores han reelaborado la presentación, añadiendo figuras y cuadros y eliminando material de detalle, pero a nuestro entender no lo han convertido en el tratamiento de la "interfaz hardware/software" que promete su título.
+
+* Ward y Haldstead (1990) presentan, de manera muy clara y detallada, los conceptos de los niveles de circuito lógico y micromáquina. Los de máquina convencional y máquina operativa quedan algo difuminados. Requiere algún conocimiento previo del lenguaje C (aunque incluye un apéndice de once páginas, que puede ser suficiente para los lectores que conozcan otro lenguaje).
+
+* De Miguel (1988) sigue otro enfoque, más ligado a la realización en el nivel de circuito. Contiene muchos ejemplos y detalles de diseño de sistemas con "chips" comerciales.
+
+Si el lector se entretiene en escudriñar las fuentes que aparecen en "Referencias" observará la abundancia de artículos publicados en revistas del I.E.E.E. (*Institute of Electrical and Electronics Engineers*) (y, particularmente, una de ellas, "*Computer*"). El lector puede obtener información sobre cómo solicitar la admisión como miembro, y cómo suscribirse a esas revistas (con cuotas muy reducidas para estudiantes), en las "Secciones" nacionales (la española tiene su sede en la E.T.S.I. Telecomunicación de la Universidad Politécnica de Cataluña, apartado 30002, 08080 Barcelona), o en las oficinas dentrales del I.E.E.E. (IEEE Service Center, 445 Hoes Lane, P.O. Box 1331. Piscataway, N.J. 08855-1331, U.S.A) o de la "Computer Society" (Computer Society Publicactions Office 10662, Los Vaqueros Cir., P.O. Box 3014, los Alamitos, CA 90720-1264, U.S.A.). También puede considerar su afiliación a la A.C.M. (*Association for the Computing Machinery*), que publica asimismo revistas de gran calidad y prestigio (ACM, 1515 Broadway, New York, N.Y. 10036, U.S.A). Existe un "Capítulo de estudiantes de ACM de la Universidad Politécnica de Madrid" con sede en la Facultad de Informática (Campus de Montegancedo, 28660 Boadilla del Monte).
+
+
 
 
 🚧 TODO 🚧
@@ -575,3 +602,6 @@ Algunos de los nombres de los niveles de máquinas requieren comentario. "Nivel 
 
 [^32]: A. Newell y H. Simon: "Computer science as sciencitif inquiry: symbols and search". *Communications of the ACM*, 19, 3 (Mar. 1976), pp. 113-126.
 
+[^33]: También hemos de advertir que la edición restringida de este último hace que sea difícil conseguirlo. Esperamos que su autor se decida pronto a hacer una reedición de mayor alcance.
+
+[^34]: Respetando el deseo de los autores, iremos alternando sus nombres en las referencias sucesivas a éste y a su segundo libro.
