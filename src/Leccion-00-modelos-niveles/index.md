@@ -461,11 +461,26 @@ Ahora bien, los conceptos y los modelos generales sólo se asientan bien mentalm
 
 En cada Parte se encuentran dos tipos de lecciones: las que se apoyan en las máquinas ficticias para introducir conceptos o para concretarlos, y las que presentan modelos más generales y variaciones, generalizando los detalles de las otras lecciones. Así, en las dos primeras Partes se empieza con el caso concreto de Símplez, luego se generaliza y finalmente se vuelven a concretar algunos detalles con Algorítmez y Regístrez. La Tercera Parte comienza con tres lecciones generales a las que siguen otras tres en las que se desarrollan modelos de sistemas operativos para Algorítmez, y termina con dos lecciones de carácter general.
 
+![Figura 0.23. Diagrama de dependencias entre las lecciones.](fig-0_23-Diagrama-de-dependencias-entre-las-lecciones.svg)
+
+
 Las lecciones están secuenciadas, como es habitual, para un estudio lineal del libro. Pero existen múltiples maneras alternativas de recorrerlo, dependiendo de los intereses del lector y de sus conocimientos previos. La figura 0.23, en la que se han resumido las dependencias más importantes entre las lecciones, puede servir de orientación, junto con la Tabla de materias, para establecer posibles trayectorias. Las flechas de trazo continuo indican dependencias "fuertes", en el sentido de que la lección en la que entra una de estas flechas es muy dependiente de lo tratado en aquella de la que procede. Las de puntos son "débiles": la lección puede asimilarse sin necesidad de haber estudiado la precedente, si bien habrá que acudir a ella en algunos momentos (estas referencias puntuales se explicitan en el texto de cada lección, en los lugares oportunos).
 
 También es posible, si se dispone de conocimientos previos, empezar el estudio en lugares intermedios. Los "conocimientos básicos" a los que alude la figura 0.23 se refieren a:
 
-* En los niveles de máquina operativa
+* En los niveles de máquina operativa y máquina simbólica (entrada a la lección 19), estructura y funcionamiento en el nivel de máquina convencional. (Pero obsérvese que las lecciones 20 y 24 se sustentan en el caso concreto de Algorítmez, y requieren el conocimiento previo de algunos detalles de las lecciones 6 y 7).
+
+* En el nivel de máquina convencional (entrada a la lección 4), conceptos elementes de la "arquitectura de von Neumann" y de programación en ese nivel.
+
+* En el nivel de micromáquina (entrada a la lección 12), conceptos elementes de transferencias entre registros y control (Pero obsérvese también que las lecciones 13 y 14 son dependientes de la 6).
+
+Las dos lecciones sobre Regístrez pueden estudiarse con bastante independencia de las demás si se dispone de una buena base de conocimientos sobre los niveles de máquina convencional y micromáquina.
+
+Como ejemplos de adaptación del material a diferentes necesidades, nosotros lo hemos utilizado para:
+
+* Un curso básico sobre estructura y funcionamiento de los ordenadores impartido dentro de un programa de reconversión de titulados superiores a las tecnologías de la información. Un curso sobre programación (con Pascal) y otro sobre circuitos lógicos precedían a éste. El objetivo era impartir conocimientos imprescindibles a futuros usuarios de los niveles de máquina convencional, máquina operativa y/o máquina simbólica. Para un total de sesenta horas lectivas, se siguieron las lecciones 1, 2, 3, 4, 5, 9, 10, 11, 19, 23 y 24.
+
+* La asignatura "Fundamentos de Ordenadores", incluida en el tercer curso del plan de estudios de la Escuela Técnica Superior de Ingenieros de Telecomunicación de Madrid (en segundo curso, a partir de 1995/96). Es una asignatura cuatrimestral de unas cincuenta horas lectivas cuyos alumnos han estudiado previamente programación (con Módulo-2) y, al mismo tiempo que ésta, electrónica digital (es decir, nivel de circuito lógico). Posteriormente, algunos alumnos siguen especialidades de electrónica o radiocomunicaciones, y para ellos ésta es la último asignatura específica sobre Informática, mientras que otros estudian la especialidad de Telemática, y esta asignatura es el pilar básico de otras como "Arquitectura de ordenadores", "Sistemas operativos", "Redes de ordenadores" y "Bases de datos". En los últimos años hemos seguido, esencialmente, la siguiente secuencia de lecciones: 1, 2, 3, 4(π), 5(π), 6, 7, 9, 10, 11, 12, 13, 14(π), 17(π) y 18(π). (El símbolo "π" significa que se utilizó solamente parte de la lección).
 
 
 
