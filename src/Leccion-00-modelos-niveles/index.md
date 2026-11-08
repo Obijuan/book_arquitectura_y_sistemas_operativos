@@ -482,7 +482,9 @@ Como ejemplos de adaptación del material a diferentes necesidades, nosotros lo 
 
 * La asignatura "Fundamentos de Ordenadores", incluida en el tercer curso del plan de estudios de la Escuela Técnica Superior de Ingenieros de Telecomunicación de Madrid (en segundo curso, a partir de 1995/96). Es una asignatura cuatrimestral de unas cincuenta horas lectivas cuyos alumnos han estudiado previamente programación (con Módulo-2) y, al mismo tiempo que ésta, electrónica digital (es decir, nivel de circuito lógico). Posteriormente, algunos alumnos siguen especialidades de electrónica o radiocomunicaciones, y para ellos ésta es la último asignatura específica sobre Informática, mientras que otros estudian la especialidad de Telemática, y esta asignatura es el pilar básico de otras como "Arquitectura de ordenadores", "Sistemas operativos", "Redes de ordenadores" y "Bases de datos". En los últimos años hemos seguido, esencialmente, la siguiente secuencia de lecciones: 1, 2, 3, 4(π), 5(π), 6, 7, 9, 10, 11, 12, 13, 14(π), 17(π) y 18(π). (El símbolo "π" significa que se utilizó solamente parte de la lección).
 
+* Parte de la asignatura "Arquitectura de ordenadores", de cuarto curso en el mismo Centro, cuyos alumnos han estudiado previamente la mencionada en el párrafo anterior. Se utilizan las  lecciones 19 a 23, ocupándose dieciocho horas lectivas, como introducción a los sistemas operativos.
 
+## 0.9 Resumen
 
 🚧 TODO 🚧
 
