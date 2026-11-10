@@ -130,14 +130,11 @@ Ya habíamos avisado que los conceptos de los modelos procesales son abstractos.
 
 ## 0.4 Ejemplos de sistemas y modelos
 
-🚧 DEBUG 🚧
-
-
 Los ejemplos que siguen se refieren a sistemas de distinta naturaleza. El lector puede encontrar, dependiendo de sus conocimientos previos, mayor o menor dificultad para la comprensión de los modelos, pero esperamos que, en su conjunto, sirvan estas ilustraciones para que capte las diferencias entre modelos funcionales, estructurales y procesales.
 
 ### Ejemplo 1: un sistema mecánico
 
-Consideremos nuevamente la figura 0.5, introducida para ilustrar que un sistema eléctrico (parte inferior) es un modelo analógico de un sistema mecánico (parte superior).[^20] Las ecuaciones matemáticas que aparecen son modelos funcionales de los correspondientes sistemas. En efecto, en el sistema mecánico podemos considerar que la "entrada" o "estímulo" (acción del entorno sobre el sistema) en cada momento es la fuerza aplicada, F(t), y que la "salida" o "respuesta" es el desplazamiento de un punto del sistema, x(t), con relación a la posición de reposo. La ecuación resume todas las relaciones posibles entre la entrada y la salida. Así, si como consecuencia de una fuerza aplicada en el instante $t=0$ el desplazamiento es $x > 0$ y si a partir de ese momento nose aplica ninguna fuerza ($F(t)=0$ para $t>0$), la evolución de la salida, $x(t)$, se puede obtener matemáticamente integrando la ecuación; el resultado, gráficamente, es el que puede verse en la figura 0.10: un movimiento oscilatorio amortiguado.
+Consideremos nuevamente la figura 0.5, introducida para ilustrar que un sistema eléctrico (parte inferior) es un modelo analógico de un sistema mecánico (parte superior).[^20] Las ecuaciones matemáticas que aparecen son modelos funcionales de los correspondientes sistemas. En efecto, en el sistema mecánico podemos considerar que la "entrada" o "estímulo" (acción del entorno sobre el sistema) en cada momento es la fuerza aplicada, F(t), y que la "salida" o "respuesta" es el desplazamiento de un punto del sistema, x(t), con relación a la posición de reposo. La ecuación resume todas las relaciones posibles entre la entrada y la salida. Así, si como consecuencia de una fuerza aplicada en el instante $t=0$ el desplazamiento es $x > 0$ y si a partir de ese momento no se aplica ninguna fuerza ($F(t)=0$ para $t>0$), la evolución de la salida, $x(t)$, se puede obtener matemáticamente integrando la ecuación; el resultado, gráficamente, es el que puede verse en la figura 0.10: un movimiento oscilatorio amortiguado.
 
 
 ![Figura 0.10. Un modo de comportamiento del sistema mecánico de la figura 0.5.](fig-0_10-modelo-sistema-comportamiento-sistema-mecanico.svg)
@@ -162,7 +159,7 @@ $$\frac{dx(t)}{dt}=v(t)$$
 
 $$\frac{dv(t)}{dt}=-\frac{K}{M}.x(t) - \frac{D}{M}.v(t) + \frac{1}{M}.F(t)$$
 
-que determinan, de forma continua, el cambio de un estado (x(t), v(t)) al siguiente. El **espacio de estados** es el conjunto de valores posibles del par (x(t), v(t)): todo el plano real. A partir de un estado inicial, y para un estímulo F(t), la sución de estados (puntos en el plano) forma una **trayectoria**. En la figura 0.11 puede verse la trayectoria corresponiente al caso de la figura 0.10 ($x(t_0)>0$, $v(t)=0$ y $F(t)=0$ para $t>t_0$).
+que determinan, de forma continua, el cambio de un estado (x(t), v(t)) al siguiente. El **espacio de estados** es el conjunto de valores posibles del par (x(t), v(t)): todo el plano real. A partir de un estado inicial, y para un estímulo F(t), la sucesión de estados (puntos en el plano) forma una **trayectoria**. En la figura 0.11 puede verse la trayectoria corresponiente al caso de la figura 0.10 ($x(t_0)>0$, $v(t)=0$ y $F(t)=0$ para $t>t_0$).
 
 ![Figura 0.11. Trayectoria correspondiente al comportamiento de la figura 0.9.](fig-0_11-trayectoria-comportamiento-fig-0_9.svg)
 
@@ -173,13 +170,13 @@ Consideremos dos especies animales, una de depredadores y otra de presas. Para e
 1. Las variables $P(t)$ y $D(t)$ representarán a los números de presas y de depredadores existentes en el instante $t$. Sus valores son números enteros, pero nuestro modelo las tratará como variables continuas (con valores reales).
 2. Las presas se reproducen sin limitación; si no hubiese depredadores su crecimiento sería exponencial.
 3. Los depredadores viven y se reproducen si hay suficientes presas; si no hubiese presas, su número tendería asintóticamente a cero.
-4. La tasa de crecimiento de la población de presas depende, por una parte, del número de presas (cuanto más hay, más crece), y, por otro, del *número de encuntros*, que es proporcional al producto $P(t) \times D(t)$ (cuanto más hay menos crece la población).
+4. La tasa de crecimiento de la población de presas depende, por una parte, del número de presas (cuanto más hay, más crece), y, por otro, del *número de encuentros*, que es proporcional al producto $P(t) \times D(t)$ (cuanto más hay menos crece la población).
 5. La tasa de crecimiento de la población de depredadores depende igualmente del número de depredadores (cuanto más hay, menos crece, porque tienen que repartirse a las presas), y del número de encuentros (cuanto más hay, más crece).
 6. Abstraemos cualquier iteración con el entorno.
 
-Esta último hipótesis equivale a decir que el modelo es un *sistema cerrado*. Por tanto, no existe modelo funcional.
+Esta última hipótesis equivale a decir que el modelo es un *sistema cerrado*. Por tanto, no existe modelo funcional.
 
-Teniendo en cuenta las hipótesis 4 y 5 es fácil expresar gráficamente las relaciones entre tipo de modelo estructural se llama *diagrama causal*.
+Teniendo en cuenta las hipótesis 4 y 5 es fácil expresar gráficamente las relaciones entre las variables como indica la figura 0.12. Este tipo de modelo estructural se llama *diagrama causal*.
 
 ![Figura 0.12. Modelo estructural (diagrama causal) de las presas y los depredadores.](fig-0_12-modelo-estructural-presas-depredadores.svg)
 
@@ -228,7 +225,7 @@ donde $Θ$ debe coincidir con el periódo de presentación de los estímulos (bi
 
 Obsérvese que en la especificación de la etapa de sumador no se ha indicado explícitamnte que las variables son función del tiempo ($s(t)$, $e1(t)$, etc..). Podemos proceder así porque este componente no tiene "memoria": su respuesta en un instante depende solamente de las entradas en ese instante (desde el punto de vista electrónico, es un "circuito combinacional").
 
-Finalmente, veamos el *modelo procesal* del sumador binario serial. Más arriba hemos definido el concepto de "estado" como "información mínima necesaria en un instante dado para, conociendo la evolución de los estímulos a partir de ese instante, predecir la evolución de las respuestas". En este caso, la única información necesaria para poder predecir la salida en si ha habido acarreo anteriormente o no. Es decir, el sistema puede estar en uno de dos estados posibles, que podemos representar con los símbolos $q_0$ (correspondiente a $q=0$, no acarreo previo) y $q_1$ (correspondiente a $q=1$). El *espacio de estados* es finito, y consta sólo de dos "puntos" (dos estados concretos):
+Finalmente, veamos el *modelo procesal* del sumador binario serial. Más arriba hemos definido el concepto de "estado" como "información mínima necesaria en un instante dado para, conociendo la evolución de los estímulos a partir de ese instante, predecir la evolución de las respuestas". En este caso, la única información necesaria para poder predecir la salida es si ha habido acarreo anteriormente o no. Es decir, el sistema puede estar en uno de dos estados posibles, que podemos representar con los símbolos $q_0$ (correspondiente a $q=0$, no acarreo previo) y $q_1$ (correspondiente a $q=1$). El *espacio de estados* es finito, y consta sólo de dos "puntos" (dos estados concretos):
 
 $$Q = \{q_0, q_1\}$$
 
@@ -246,7 +243,7 @@ Como decíamos antes, dados el estado actual y el estímulo, la función de tran
 
 La tabla indica los ocho valores de la función $f$ (los escritos delante de los símbolos "/") y los ocho valores de $g$ (los escritos detrás). En el diagrama, los círculos corresponden a estados, y los arcos a transiciones entre estados; cada arco, etiquetado "$e_1e_2/s$", corresponde a una transición de un estado a otro (que puede ser el mismo) debida a la entrada $(e_1, e_2)$, generándose la salida $s$.
 
-Los tres modelos (funcional, estructural y procesal) son tres formas distintas de *descripbir* al mismo sistema. Dependiendo de lo que se pretenda puede ser más interesante uno u otro. Así, desde un punto de vista de "usuario" (un diseñador de un sistema de nivel superior, en el que se utiliza éste como componente o subsistema), lo que importa es el modelo funcional (incluido el parámetro $Θ$). Pero desde un punto de vista de "diseñador" los modelos más útiles son el estructural y el procesal.
+Los tres modelos (funcional, estructural y procesal) son tres formas distintas de *describir* al mismo sistema. Dependiendo de lo que se pretenda puede ser más interesante uno u otro. Así, desde un punto de vista de "usuario" (un diseñador de un sistema de nivel superior, en el que se utiliza éste como componente o subsistema), lo que importa es el modelo funcional (incluido el parámetro $Θ$). Pero desde un punto de vista de "diseñador" los modelos más útiles son el estructural y el procesal.
 
 ### Ejemplo 4: un programa de ordenador
 
@@ -264,13 +261,14 @@ Volvamos al ejemplo del apartado anterior sobre el modelo estructural de un prog
 
 5. De nuevo el proceso pasa a *bloqueado*, ahora esperando que el resultado quede escrito.
 
-6. Terminada la salida del resultado, el proceso vuelve a estar activo (seghuramente, y como al principio, por muy poco tiempo).
+6. Terminada la salida del resultado, el proceso vuelve a estar activo (seguramente, y como al principio, por muy poco tiempo).
 
 7. Como el proceso ha terminado, pasa al estado *muerto*.
 
 Este es un modelo procesal para un programa concreto. En el apartado 19.8 estudiaremos un modelo genérico, de gran importancia para el estudio del funcionamiento del ordenador durante la ejecución de programas.
 
 ### Ejemplo 5: una casa encantada
+
 
 "Querido amigo:
 
@@ -284,7 +282,7 @@ El canto conserva el mismo estado (presente o ausente) salvo si en el minuto act
 
 En cuanto a la risa, si no quemo incienso, aparece o no según que el canto estuviese presente o ausente (de modo que la risa imita al canto con un minuto de retardo). Ahora bien, si quemo incienso la risa hace justamente lo contrario de lo que hace el canto. En el momento en el que le escribo estoy oyendo a la vez la risa y el canto. Le quedaré sumamente agradecido si me aconseja sobre las manipulaciones de órgano e inclienso que debo seguir para restablecer definitivamente la calma."
 
-El comportamiento que describe esta carta (tomada de un inolvidable libro de Ross Ashby[^24]) caracteriza a un sistema cuyas entradas y salidas se pueden formalizar con variables binarias: I, O (entradas), R y C (salidas) (I=0 si no se quema incienso, I=1 si se quema, etc.). El mismo texto de la carta es ya un *modelo funcional*, que como se puede formalizar con el lenguaje de la lógica:
+El comportamiento que describe esta carta (tomada de un inolvidable libro de Ross Ashby[^24]) caracteriza a un sistema cuyas entradas y salidas se pueden formalizar con variables binarias: I, O (entradas), R y C (salidas) (I=0 si no se quema incienso, I=1 si se quema, etc.). El mismo texto de la carta es ya un *modelo funcional*, que se puede formalizar con el lenguaje de la lógica:
 
 párrafo 4: $C_{t+1} = C_t \oplus (\bar{R_t} . O_t)$  
 párrafo 5: $R_{t+1} = I_t \oplus C_t $  
@@ -313,7 +311,7 @@ Pues bien, basta con considerar detenidamente los párrafos 4 y 5 de la carta pa
 
 ![Figura 0.19. Modelo procesal de la casa encantada.](fig-0_19-Modelo-procesal-casa-encantada.svg)
 
-A la vista de este diagrama, la solución al problema que plantea la carta aparece fácilmente: el estado inicial es $q_3$; de él se puede pasar a $q_1$ mediante $e_1$ o $e_3$, y de éste a $q_0$ mediante $e_3$. Expresándolo en los mismos términos epistolares: "Durante un minuto, queme usted incienso, y, si le apetece, toque también el órgano; desaparecerá la risa. Durante el minuto siguiente queme incienso y toque el órgano a la vez, y al finalizar ese minuto cese toda actividad. Si no vuelve a manipular ni el órgano ni el incienso, se habrá lirado para siempre del encantamiento".
+A la vista de este diagrama, la solución al problema que plantea la carta aparece fácilmente: el estado inicial es $q_3$; de él se puede pasar a $q_1$ mediante $e_1$ o $e_3$, y de éste a $q_0$ mediante $e_3$. Expresándolo en los mismos términos epistolares: "Durante un minuto, queme usted incienso, y, si le apetece, toque también el órgano; desaparecerá la risa. Durante el minuto siguiente queme incienso y toque el órgano a la vez, y al finalizar ese minuto cese toda actividad. Si no vuelve a manipular ni el órgano ni el incienso, se habrá librado para siempre del encantamiento".
 
 Hemos considerado como salidas $R$ y $C$, que son también las variables de estado (por este motivo, en este caso las ecuaciones de estado son las mismas ecuaciones del modelo funcional escritas más arriba). También podemos definir una salida binaria, $s$, que represente la presencia o ausencia de algún sonido:[^25]
 
@@ -354,7 +352,7 @@ Los modelos para la comprensión son generalmente conceptuales, más o menos for
 
 El término "diseño" se aplica tanto en la ingeniería como en actividades muy distantes de ella en el plano axiológico (los valores esenciales en esas actividades son de naturaleza estética) y en otras de naturaleza "mixta" (arquitectura, urbanismo...). Todas estas actividades comparten una orientación creativa, la idea de ensamblar partes para construir un sistema con ciertos fines.
 
-El objeto de la actividad de diseño es siempre un *artefacto*. Son artegfactos un automóvil, un ordenador, un edificio..., pero también un sistema axiomático, un sistema de transporte, un sistema social...Puede discutirse si el diseño del segundo tipo de sistemas es "ingeniería", pero hay princpios y herramientas que son de utilidad en el diseño de ciertos tipos de sistemas y que pueden extenderse a otros.
+El objeto de la actividad de diseño es siempre un *artefacto*. Son artefactos un automóvil, un ordenador, un edificio..., pero también un sistema axiomático, un sistema de transporte, un sistema social...Puede discutirse si el diseño del segundo tipo de sistemas es "ingeniería", pero hay principios y herramientas que son de utilidad en el diseño de ciertos tipos de sistemas y que pueden extenderse a otros.
 
 En el proceso de diseño se pueden utilizar como herramientas sistemas materiales o concepturales. La herramienta material más general y flexible es el ordenador, que, con técnicas de simulación y visualización, permite prever el funcionamiento del sistema que se está diseñando; esto es lo que se llama CAD ("Computer-Aided Design": diseño asistido por ordenador). Las herramientas concepturales son las teorías, metodologías y modelos disponibles para el tipo de artefacto a diseñar.
 
@@ -366,7 +364,7 @@ El ordenador se puede considerar como una herramienta (punto de vista del usuari
 
 ### Diseño, implementación y especificaciones
 
-En las actividades ligadas a la concepción y construcción de un artefacto es útil distinguir entre **diseño** e **implementación**. El diseño comienza con una descripción de las funciones pretendidas (un *modelo funcional) del sistema, y termina con una descripción de los componentes abstractos y sus interrelaciones y procesos (modelos estructural abstracto y procesal). En la implementación se materializa el modelo estructural en otro cuyos componentes son concretos. La figura 0.20 (que el lector debe situar en el contexto de la figura 0.3) muestra los tipos de modelos más ligados a cada actividad.
+En las actividades ligadas a la concepción y construcción de un artefacto es útil distinguir entre **diseño** e **implementación**. El diseño comienza con una descripción de las funciones pretendidas (un *modelo funcional*) del sistema, y termina con una descripción de los componentes abstractos y sus interrelaciones y procesos (modelos estructural abstracto y procesal). En la implementación se materializa el modelo estructural en otro cuyos componentes son concretos. La figura 0.20 (que el lector debe situar en el contexto de la figura 0.3) muestra los tipos de modelos más ligados a cada actividad.
 
 
 ![Figura 0.20. Modelos de artefactos más adecuados según la pragmática.](fig-0_20-Modelo-artefactos-mas-adecuados-pragmatica.svg)
@@ -374,7 +372,7 @@ En las actividades ligadas a la concepción y construcción de un artefacto es �
 
 Además de su utilidad dentro de cada actividad, los modelos también son vehículos de comunicación entre unas actividades y otras. Cuando sirven a esta función, los modelos suelen llamarse **especificaciones**. Y, para reducir al mínimo posible los errores de comunicación, conviene que estos modelos estén expresados en un *lenguaje formal*. Se habla entonces de *especificaciones formales*.
 
-Para ilustarar lo anterior, volvamos al ejemplo del sumador binario. Partiendo de su especificación funcional, el resultado del diseño es el modelo procesal de la figura 0.16 y el estructural de la figura 0.15. La implementación en este caso consistiría en buscar los componentes físicos (sistemas electrónicos digitales) que tengan las funciones requeridas por el modelo estructural. 
+Para ilustrar lo anterior, volvamos al ejemplo del sumador binario. Partiendo de su especificación funcional, el resultado del diseño es el modelo procesal de la figura 0.16 y el estructural de la figura 0.15. La implementación en este caso consistiría en buscar los componentes físicos (sistemas electrónicos digitales) que tengan las funciones requeridas por el modelo estructural. 
 
 Un hecho interesante aparece aquí: al bajar el nivel de abstracción, en la implementación pueden ponerse de manifiesto restricciones físicas que obligan a volver sobre las especificaciones del diseño. Así, en la especificación funcional podría haberse decidido un determinado valor, muy pequeño, del parámetro $θ$ (intervalo entre presentación de los bits). En el modelo estructural procedente del diseño, este valor es el que debe tener el "elemento de retardo". Pero supongamos, ya en la implementación, que al buscar un componente electrónico que materialice a este elemento,[^27] no encontramos ninguno con ese valor tan pequeño.[^28] En este caso sencillo no hay más solución que relajar las especificaciones (conformándose con un sistema más lento); en otros, en los que existen modelos alternativos, es posible rehacer el diseño de modo tal que la implementación sea factible.
 
@@ -394,13 +392,13 @@ La sucesión de fases por las que pasa un producto desde su concepción hasta su
 
 ## 0.6 Jerarquías de abstracciones
 
-Un ordenador es un *sistema complejo* que puede describirse mediante diferentes *modelos, en distintos *niveles* de una *jerarquía de abstracciones*. Esta era nuestra declaración inicial, y el objetivo de esta lección es profundizar en su significado y en sus consecuencias. Ya hemos hablado de "sistemas", "complejidad" y "modelos", hemos visto tres tipos básicos de modelos conceptuales para sistemas dinámicos (funcionales, estructurales y procesales), hemos explicado que las descripciones son modelos y que a un mismo sistema pueden aplicársele descripciones diferentes por consideraciones pragmáticas. Aclaremos ahora lo que pretendemos significar con "niveles" y "jerarquía de abstracciones". En general en este apartado, y particularizando para los ordenadores en el siguiente.
+Un ordenador es un *sistema complejo* que puede describirse mediante diferentes *modelos*, en distintos *niveles* de una *jerarquía de abstracciones*. Esta era nuestra declaración inicial, y el objetivo de esta lección es profundizar en su significado y en sus consecuencias. Ya hemos hablado de "sistemas", "complejidad" y "modelos", hemos visto tres tipos básicos de modelos conceptuales para sistemas dinámicos (funcionales, estructurales y procesales), hemos explicado que las descripciones son modelos y que a un mismo sistema pueden aplicársele descripciones diferentes por consideraciones pragmáticas. Aclaremos ahora lo que pretendemos significar con "niveles" y "jerarquía de abstracciones". En general en este apartado, y particularizando para los ordenadores en el siguiente.
 
 ### Modelos y abstracciones
 
 La modelación y la abstracción son actividades intelectuales indisolublemente unidas. En efecto, el modelo sólo representa los rasgos de interés del original, es decir, *hace abstracción* de los que no son de interés para el propósito del modelo.
 
-En el ejemplo del sumador binario serial abstraíamos detalles como los valores de voltajes que puedan corresponder a "0" y a "1", o como el hecho de que los cambios (de "0" a "1" y de "1" a "0") no son instantáneo, sino que "en realidad" son graduales, con un tiempo de transición. (Las comillas son debidas a que los cambios se describen como graduales, o como funciones continuas del tiempo, en un nivel de abstracción inferior, pero si aún descendemos más en el nivel de abstracción y aplicamos modelos de la física cuántica nos encontramos "en realidad" con cambios nuevamente discretos).
+En el ejemplo del sumador binario serial abstraíamos detalles como los valores de voltajes que puedan corresponder a "0" y a "1", o como el hecho de que los cambios (de "0" a "1" y de "1" a "0") no son instantáneos, sino que "en realidad" son graduales, con un tiempo de transición. (Las comillas son debidas a que los cambios se describen como graduales, o como funciones continuas del tiempo, en un nivel de abstracción inferior, pero si aún descendemos más en el nivel de abstracción y aplicamos modelos de la física cuántica nos encontramos "en realidad" con cambios nuevamente discretos).
 
 ### Jerarquías de niveles de abstracción
 
@@ -417,7 +415,7 @@ De una manera general, un nivel de abstracción para la descripción de un siste
 * Las *leyes de comportamiento* que determinan el comportamiento (modelo funcional) de un sistema a partir del modelo estructural del mismo y de los modelos funcionales de los componentes, o bien a partir del modelo procesal.
 * El *lenguaje* (o lenguajes) con el que expresamos las leyes y formulamos modelos.
 
-Entre estos niveles existe una relación de orden: los componentes de los modelos estructurales del nivel *i* son sistemas del nivel *i-1*. El distema "final" (aquél para el que se construye la jerarquía) biene descrito por los modelos del más alto nivel. "Descender" (pasar del nivel *i* al *i-1*) en la jerarquía es *concretar* detalles, y "ascender" es *abstraer*. Cuando la jerarquía corresponde a un artefacto, y se utiliza para su construcción, la implementación del sistema del nivel *i* implica un "descenso" al nivel *i-1*.
+Entre estos niveles existe una relación de orden: los componentes de los modelos estructurales del nivel *i* son sistemas del nivel *i-1*. El sistema "final" (aquél para el que se construye la jerarquía) viene descrito por los modelos del más alto nivel. "Descender" (pasar del nivel *i* al *i-1*) en la jerarquía es *concretar* detalles, y "ascender" es *abstraer*. Cuando la jerarquía corresponde a un artefacto, y se utiliza para su construcción, la implementación del sistema del nivel *i* implica un "descenso" al nivel *i-1*.
 
 ## 0.7 Jerarquía de niveles para los ordenadores
 
@@ -429,21 +427,21 @@ La figura 0.22 presenta los siete niveles de la jerarquía que vamos a considera
 
 * En esta jerarquía se hace referencia a modelos que son precisisamente el objeto de estudio de este curso. Por tanto, no se puede pretender que sea comprensible en una primera lectura. Este apartado debería ser objeto de repaso recurrente tras el estudio de cada una de las partes del libro.
 
-El nivel más bajo (el de menor abstracción) es el de **dispositivos**. En él se estudian los sistemas electrónicos básicos (transistores, resistores, condensadores, etc.) que son componentes del siguiente nivel. En este nivel, los componentes son los materiales semiconductores, y el lengujae para expresar las interrelaciones y los procesos es el de la física del estado sólido. (Aquí, si hubiéramos de incluir los detalles no electrónicos a que nos referíamos en el párrafo anterior, consideraríamos otros componentes, como soportes magnéticos, ópticos y mecánicos).
+El nivel más bajo (el de menor abstracción) es el de **dispositivos**. En él se estudian los sistemas electrónicos básicos (transistores, resistores, condensadores, etc.) que son componentes del siguiente nivel. En este nivel, los componentes son los materiales semiconductores, y el lenguaje para expresar las interrelaciones y los procesos es el de la física del estado sólido. (Aquí, si hubiéramos de incluir los detalles no electrónicos a que nos referíamos en el párrafo anterior, consideraríamos otros componentes, como soportes magnéticos, ópticos y mecánicos).
 
 Los componentes del nivel de **circuito electrónico** son los sistemas del anterior, es decir, lo que en la terminología de la electrónica se llaman, justamente, "componentes" (discretos): resistores, transistores, etc. Se utilizan aquí lenguajes gráficos para indicar las interrelaciones o conexiones entre los componentes, y para expresar el comportamiento de estos componentes y de las estructuras (curvas voltaje-corriente, cronogramas de las evoluciones de las variables, etc.), así como el lenguaje del álgebra para expresar las leyes de la electricidad.
 
-En el nivel de **circuito lógico** se abstrae la estructura de ciertos sistemas construidos en el nivel anterior: las *puertas lógicas*. Además, y paralelamente, se abstrae también la naturaleza física de las variables: ya no se trabaja con valores de voltaje o de corriente, expresados en voltios o amperios, sino con *niveles lógicos*. Este nivel puede descomponerse en dos subniveles: el de *circuito combinacional* y el de *circuito secuencial*. En efecto, para el diseño de circuitos secuenciales se toman como componentes sistemas combinacionales, como los biestablaes, diseñados con puertas. El lenguaje predominante en este nivel es el del *álgebra de Boole*. El nivel de circuito lógico no forma parte del contenido de este curso, pero los conceptos más importantes se presentan en el apéndice B.
+En el nivel de **circuito lógico** se abstrae la estructura de ciertos sistemas construidos en el nivel anterior: las *puertas lógicas*. Además, y paralelamente, se abstrae también la naturaleza física de las variables: ya no se trabaja con valores de voltaje o de corriente, expresados en voltios o amperios, sino con *niveles lógicos*. Este nivel puede descomponerse en dos subniveles: el de *circuito combinacional* y el de *circuito secuencial*. En efecto, para el diseño de circuitos secuenciales se toman como componentes sistemas combinacionales, como los biestables, diseñados con puertas. El lenguaje predominante en este nivel es el del *álgebra de Boole*. El nivel de circuito lógico no forma parte del contenido de este curso, pero los conceptos más importantes se presentan en el apéndice B.
 
 Los anteriores niveles no son exclusivos de la descripción de ordenadores: son muchos los artefactos electrónicos digitales diseñados en el nivel de circuito lógico que no son programables o que, aun siéndolo, no son de propósito general (características ambas que son esenciales de los ordenadores). En tales sistemas es obvio que no tiene sentido *abstraer* por encima del nivel de circuito lógico.
 
 El siguiente nivel es ya característico de los ordenadores: el nivel de **micromáquina**. Sus componentes son registros (elementos en los que se puede registrar y recuperar una información binaria de longitud fija), operadores aritméticos y lógicos (que permiten transformar una información o combinar varias para dar un resultado predeterminado), unidades de memoria (que almacenan un conjunto de informaciones), secuenciadores (que generan señales secuenciadas en el tiempo para gobernar a otros componentes) y otros circuitos combinacionales y secuenciales considerados como cajas negras, así como los buses, que permiten interconectar a los elementos. Un componente central en este nivel es la **memoria de control**, que almacena **microinstrucciones**. Los modelos procesales describen las secuencias en el tiempo de transferencias de conjuntos de bits entre registros y memorias; estas transferencias están determinadas por las microinstrucciones almacenadas en la memoria de control. Los modelos funcionales describen las microinstrucciones que acepta la micromáquina y sus efectos.
 
-En el **nivel de máquina convencional** (o, simplemente, **nivel de máquina) el modelo funcional de un ordenador está compuesto por seu *repertorio de instrucciones* y los convenios de *representación de la información*. Tanto las instrucciones como las otras informaciones se expresan en binario (cadenas de ceros y unos), que es el lenguaje predominante en este nivel. En los modelos estructurales se abstrae el hecho de que exista una memoria de control con microinstrucciones; se considera integrada en un componente, la *unidad central de procesamiento*, que en el nivel de micromáquina se descompone en circuitos aritméticos, memorias de control, etc. Combinando instrucciones (es decir, programando) se construyen sistemas de niveles superiores.
+En el **nivel de máquina convencional** (o, simplemente, **nivel de máquina**) el modelo funcional de un ordenador está compuesto por su *repertorio de instrucciones* y los convenios de *representación de la información*. Tanto las instrucciones como las otras informaciones se expresan en binario (cadenas de ceros y unos), que es el lenguaje predominante en este nivel. En los modelos estructurales se abstrae el hecho de que exista una memoria de control con microinstrucciones; se considera integrada en un componente, la *unidad central de procesamiento*, que en el nivel de micromáquina se descompone en circuitos aritméticos, memorias de control, etc. Combinando instrucciones (es decir, programando) se construyen sistemas de niveles superiores.
 
 El **nivel de máquina operativa** (que corresponde a un ordenador acompañado de un "sistema operativo") surge como necesidad de "arropar" al "ordenador desnudo" (máquina convencional) con programas de uso general que lo hagan más fácil de utilizar y que optimicen su funcionamiento. El modelo funcional de un ordenador en este nivel incluye al modelo funciona del nivel de máquina y lo amplía con "instrucciones virtuales" (esencialmente, *llamadas al sistema operativo*). Este nivel y el siguiente son ya niveles de *máquinas virtuales*, en el sentido de que la funcionalidad del sistema se obtiene mediante una combinación de hardware y software.
 
-Si sólo dispusiéramos de los niveles anteriores la programación de los ordenadores sería una ardua tarea debido al lenguaje binario. Por esta razón se inventaron los *procesadores de lenguajes* (los clásicos intérpretes y compiladores de lenguajes de programación, y también los programas que materializan a las *interfaces de usuario*), con los que apareción un nuevo nivel: el de **máquina simbólica*.
+Si sólo dispusiéramos de los niveles anteriores la programación de los ordenadores sería una ardua tarea debido al lenguaje binario. Por esta razón se inventaron los *procesadores de lenguajes* (los clásicos intérpretes y compiladores de lenguajes de programación, y también los programas que materializan a las *interfaces de usuario*), con los que apareción un nuevo nivel: el de **máquina simbólica**.
 
 Como todo modelo, la jerarquía es una aproximación a la realidad. Y como un modelo que pretende ser un marco general para modelos concretos de ordenadores su aplicación a esos casos concretos presenta excepciones. Las más notables se dan en la abstracción del nivel de circuito lógico al de máquina convencional. Según la figura 0.22, hay un nivel entre ambos, el de micromáquina. Pero, como veremos en la Segunda Parte,
 
@@ -466,7 +464,6 @@ En cada Parte se encuentran dos tipos de lecciones: las que se apoyan en las má
 
 ![Figura 0.23. Diagrama de dependencias entre las lecciones.](fig-0_23-Diagrama-de-dependencias-entre-las-lecciones.svg)
 
-
 Las lecciones están secuenciadas, como es habitual, para un estudio lineal del libro. Pero existen múltiples maneras alternativas de recorrerlo, dependiendo de los intereses del lector y de sus conocimientos previos. La figura 0.23, en la que se han resumido las dependencias más importantes entre las lecciones, puede servir de orientación, junto con la Tabla de materias, para establecer posibles trayectorias. Las flechas de trazo continuo indican dependencias "fuertes", en el sentido de que la lección en la que entra una de estas flechas es muy dependiente de lo tratado en aquella de la que procede. Las de puntos son "débiles": la lección puede asimilarse sin necesidad de haber estudiado la precedente, si bien habrá que acudir a ella en algunos momentos (estas referencias puntuales se explicitan en el texto de cada lección, en los lugares oportunos).
 
 También es posible, si se dispone de conocimientos previos, empezar el estudio en lugares intermedios. Los "conocimientos básicos" a los que alude la figura 0.23 se refieren a:
@@ -483,11 +480,14 @@ Como ejemplos de adaptación del material a diferentes necesidades, nosotros lo 
 
 * Un curso básico sobre estructura y funcionamiento de los ordenadores impartido dentro de un programa de reconversión de titulados superiores a las tecnologías de la información. Un curso sobre programación (con Pascal) y otro sobre circuitos lógicos precedían a éste. El objetivo era impartir conocimientos imprescindibles a futuros usuarios de los niveles de máquina convencional, máquina operativa y/o máquina simbólica. Para un total de sesenta horas lectivas, se siguieron las lecciones 1, 2, 3, 4, 5, 9, 10, 11, 19, 23 y 24.
 
-* La asignatura "Fundamentos de Ordenadores", incluida en el tercer curso del plan de estudios de la Escuela Técnica Superior de Ingenieros de Telecomunicación de Madrid (en segundo curso, a partir de 1995/96). Es una asignatura cuatrimestral de unas cincuenta horas lectivas cuyos alumnos han estudiado previamente programación (con Módulo-2) y, al mismo tiempo que ésta, electrónica digital (es decir, nivel de circuito lógico). Posteriormente, algunos alumnos siguen especialidades de electrónica o radiocomunicaciones, y para ellos ésta es la último asignatura específica sobre Informática, mientras que otros estudian la especialidad de Telemática, y esta asignatura es el pilar básico de otras como "Arquitectura de ordenadores", "Sistemas operativos", "Redes de ordenadores" y "Bases de datos". En los últimos años hemos seguido, esencialmente, la siguiente secuencia de lecciones: 1, 2, 3, 4(π), 5(π), 6, 7, 9, 10, 11, 12, 13, 14(π), 17(π) y 18(π). (El símbolo "π" significa que se utilizó solamente parte de la lección).
+* La asignatura "Fundamentos de Ordenadores", incluida en el tercer curso del plan de estudios de la Escuela Técnica Superior de Ingenieros de Telecomunicación de Madrid (en segundo curso, a partir de 1995/96). Es una asignatura cuatrimestral de unas cincuenta horas lectivas cuyos alumnos han estudiado previamente programación (con Módulo-2) y, al mismo tiempo que ésta, electrónica digital (es decir, nivel de circuito lógico). Posteriormente, algunos alumnos siguen especialidades de electrónica o radiocomunicaciones, y para ellos ésta es la última asignatura específica sobre Informática, mientras que otros estudian la especialidad de Telemática, y esta asignatura es el pilar básico de otras como "Arquitectura de ordenadores", "Sistemas operativos", "Redes de ordenadores" y "Bases de datos". En los últimos años hemos seguido, esencialmente, la siguiente secuencia de lecciones: 1, 2, 3, 4(π), 5(π), 6, 7, 9, 10, 11, 12, 13, 14(π), 17(π) y 18(π). (El símbolo "π" significa que se utilizó solamente parte de la lección).
 
 * Parte de la asignatura "Arquitectura de ordenadores", de cuarto curso en el mismo Centro, cuyos alumnos han estudiado previamente la mencionada en el párrafo anterior. Se utilizan las  lecciones 19 a 23, ocupándose dieciocho horas lectivas, como introducción a los sistemas operativos.
 
 ## 0.9 Resumen
+
+🚧 DEBUG 🚧
+
 
 Los ordenadores son *sistemas complejos* que pueden estudiarse, diseñarse o utilizarse desde distintos puntos de vista. Estos puntos de vista pueden situarse en una jerarquía de  *niveles de abstracción*. Los niveles de esta jerarquía aparecen en la figura 0.22. Y dentro de cada nivel se puede describir la función (mediante un *modelo funcional), la estructura (mediante un *modelo estructural*) o el funcionamiento (mediante un *modelo procesal*).
 
@@ -561,7 +561,9 @@ Estas son mis soluciones a los ejercicios propuestos en el libro
 🚧 TODO 🚧
 * Modelo estructural: Los componentes son los capítulos. El modelo establece las relaciones entre ellos
 * Pragmática: El modelo indica las diferentes formas de usar el libro, según lo que se quiera aprender
-
+* Es un "manual" de cómo leer el libro según los intereses del lector, y de sus conocimientos previos
+* Flechas trazo continuo: Dependencias fuertes (la lección "destino" es MUY dependiente de la que lo precede)
+* Flechas trazo punteado: Dependencias débiles: la lección se puede estudiar sin leer la precedente, aunque se debe recurrir a ella para conceptos puntuales
 
 [^1]: Obsérvese que este enunciado no es una definición de ordenador, sino la declaración de unas propiedades del mismo. Dicho de otro modo, en él se utiliza el verbo "ser" en el sentido de la *predicación*, no en el de la *identidad*. (J. Ferrater h H. Leblanc: *Lógica matemática*. Fondo de Cultura Económica, México, 1962).
 
